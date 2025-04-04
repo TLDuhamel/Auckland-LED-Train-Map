@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.1*%
+%TF.CreationDate,2025-04-04T16:59:33+13:00*%
+%TF.ProjectId,Auckland-LED-Train-Map,4175636b-6c61-46e6-942d-4c45442d5472,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.1) date 2025-04-04 16:59:33*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X-18000000Y38000000D02*
+X309800000Y38000000D01*
+X309800000Y-31900000D01*
+X-18000000Y-31900000D01*
+X-18000000Y38000000D01*
+M02*

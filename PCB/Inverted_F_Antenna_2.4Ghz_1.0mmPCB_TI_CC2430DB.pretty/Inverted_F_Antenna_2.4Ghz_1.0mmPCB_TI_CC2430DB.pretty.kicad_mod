@@ -1,0 +1,247 @@
+(footprint "Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB.pretty"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "AE1"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c3f210ee-79d9-4d20-9cab-4602e99e6de4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Inverted_F_50ohm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5779b1c6-216e-4299-a947-1f35ebc8911a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB:Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB.pretty"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ba5239f-9e5d-4bc1-a275-878443731b5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c35a0c2a-e230-4912-afef-8c0ad36ec41b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Antenna with extra pin for shielding"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d09d5ee-c6a1-4879-8926-92dc24964f5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(zone_connect 2)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start 10.76973 4.616257)
+		(end 9.709088 3.555578)
+		(stroke
+			(width 0.46)
+			(type solid)
+		)
+		(layer "F.Cu")
+		(uuid "eb16c799-7508-45e9-90d5-97ecc3f00aaa")
+	)
+	(fp_line
+		(start 10.76973 6.7)
+		(end 10.76973 4.616257)
+		(stroke
+			(width 0.46)
+			(type solid)
+		)
+		(layer "F.Cu")
+		(uuid "ec127da1-15e8-4f64-b0b6-b78f6a0f5ded")
+	)
+	(fp_poly
+		(pts
+			(xy 25.400127 1.010544) (xy 8.982334 1.010544) (xy 8.982334 3.010544) (xy 9.98233 3.010544) (xy 9.98233 4.010544)
+			(xy 6.982338 4.010544) (xy 6.982338 3.010544) (xy 7.982334 3.010544) (xy 7.982334 2.010559) (xy 1.982319 2.010559)
+			(xy 1.982319 4.876953) (xy 9.98233 4.876953) (xy 9.98233 6.810529) (xy 8.982334 6.810529) (xy 8.982334 6.010544)
+			(xy 7.982338 6.010544) (xy 7.982338 6.810529) (xy 6.832729 6.810529) (xy 6.832729 5.969131) (xy 0.533531 5.943741)
+			(xy 0.00013 5.943741) (xy 0.00013 0.000137) (xy 25.400127 0.000137)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Cu")
+		(uuid "122e32c3-8834-4584-8a7d-63cf2677150b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1b3fb2d3-6201-403d-8a5a-5bd7a08e12c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "37f92926-a35a-4c75-9e36-628d9893d487")
+		(pts
+			(xy 25.400127 0.000137) (xy 0.00013 0.000137)
+		)
+		(height 2.200137)
+		(gr_text "25.4000 mm"
+			(at 12.700128 -3.35 0)
+			(layer "Dwgs.User")
+			(uuid "37f92926-a35a-4c75-9e36-628d9893d487")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(pad "1" smd roundrect
+		(at 10.76973 6.9 90)
+		(size 1 0.46)
+		(layers "F.Cu")
+		(roundrect_rratio 0.5)
+		(thermal_bridge_angle 45)
+		(teardrops
+			(best_length_ratio 1)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curve_points 5)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "722f2adb-764b-447e-ab87-aa5573f08b27")
+	)
+	(pad "2" smd roundrect
+		(at 7.4075 6.9 90)
+		(size 0.5 1.15)
+		(layers "F.Cu")
+		(roundrect_rratio 0.25)
+		(zone_connect 2)
+		(thermal_bridge_angle 45)
+		(teardrops
+			(best_length_ratio 1)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curve_points 5)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "d200845f-9e4a-4582-8288-9bd3c6372bf2")
+	)
+	(pad "2" smd roundrect
+		(at 9.4825 6.9 90)
+		(size 0.5 1)
+		(layers "F.Cu")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(teardrops
+			(best_length_ratio 1)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curve_points 5)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "e937d66f-f114-452c-936b-d78f1bb405b9")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F&B.Cu" "Dwgs.User")
+		(uuid "dc503126-8d9e-4671-be59-7f26d6a827aa")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -5.08 0) (xy 30.48 0) (xy 30.5 7) (xy -5.08 7)
+			)
+		)
+	)
+	(group ""
+		(uuid "46c5d30d-188c-4455-940d-87d6d9e0a061")
+		(members "122e32c3-8834-4584-8a7d-63cf2677150b" "eb16c799-7508-45e9-90d5-97ecc3f00aaa"
+			"ec127da1-15e8-4f64-b0b6-b78f6a0f5ded"
+		)
+	)
+)

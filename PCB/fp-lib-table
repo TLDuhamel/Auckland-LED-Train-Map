@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB")(type "KiCad")(uri "${KIPRJMOD}/Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB.pretty")(options "")(descr ""))
+)
