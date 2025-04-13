@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.62,
+          "width": 0.56
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": true,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -56,11 +56,6 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
-        },
-        {
-          "gap": 0.2032,
-          "via_gap": 0.0,
-          "width": 0.2032
         }
       ],
       "drc_exclusions": [],
@@ -129,8 +124,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
-        "min_connection": 0.1,
+        "min_clearance": 0.15,
+        "min_connection": 0.2,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.1,
@@ -139,12 +134,12 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.3,
-        "min_text_height": 0.5,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.1,
-        "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.4,
+        "min_track_width": 0.15,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.05,
         "use_height_for_length_calcs": true
       },
@@ -194,8 +189,9 @@
       ],
       "track_widths": [
         0.0,
-        0.1,
-        0.4
+        0.25,
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -229,11 +225,15 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4,
+          "diameter": 0.5,
           "drill": 0.3
+        },
+        {
+          "diameter": 1.35,
+          "drill": 0.95
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": true
     },
     "ipc2581": {
       "dist": "",
@@ -484,56 +484,61 @@
       {
         "bus_width": 12,
         "clearance": 0.15,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.0,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.0,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.0,
+        "microvia_drill": 0.0,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.4,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "bus_width": 12,
+        "bus_width": 24,
         "clearance": 0.15,
-        "diff_pair_gap": 0.0,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.0,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Antenna",
+        "name": "2.5A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 1.35,
+        "via_drill": 0.95,
+        "wire_width": 24
+      },
+      {
+        "bus_width": 24,
+        "clearance": 0.2,
+        "line_style": 0,
+        "name": "50Ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.7198,
-        "via_diameter": 0.4,
+        "track_width": 0.8887,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
-        "wire_width": 6
+        "wire_width": 24
       },
       {
-        "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.102,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.1631,
+        "bus_width": 24,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.3132,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "USB",
+        "name": "90Ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
-        "via_diameter": 0.4,
+        "track_width": 0.3132,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
-        "wire_width": 6
+        "wire_width": 24
       }
     ],
     "meta": {
@@ -541,25 +546,51 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "+5V": [
+        "2.5A"
+      ],
       "/Antenna": [
-        "Antenna"
+        "50Ohm"
       ],
       "/D+": [
-        "USB"
+        "90Ohm"
       ],
       "/D-": [
-        "USB"
+        "90Ohm"
       ],
       "/MCU_D+": [
-        "USB"
+        "90Ohm"
       ],
       "/MCU_D-": [
-        "USB"
+        "90Ohm"
+      ],
+      "NAL-NIMT-1": [
+        "50Ω"
+      ],
+      "NAL-NIMT_LED": [
+        "50Ω"
       ],
       "Net-(AE1-A)": [
+        "50Ohm"
+      ],
+      "Net-(C10-Pad1)": [
         "Antenna"
       ],
-      "Net-(C10-Pad1)": "Antenna"
+      "Net-(D2-Pad2)": [
+        "2.5A"
+      ],
+      "Net-(D6-Pad2)": [
+        "2.5A"
+      ],
+      "Net-(D7-Pad2)": [
+        "2.5A"
+      ],
+      "STRAND-MNK-1": [
+        "50Ω"
+      ],
+      "VBUS": [
+        "2.5A"
+      ]
     },
     "netclass_patterns": []
   },
@@ -578,7 +609,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 199,
+    "annotate_start_num": 0,
     "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -682,6 +713,34 @@
     [
       "ab288f7d-a01b-40d1-8b79-fa22fb371f45",
       "Root"
+    ],
+    [
+      "92ce81e1-4cc3-49ef-ad06-c735ef324c34",
+      "NAL-NIMT-1"
+    ],
+    [
+      "2bdc9a9d-cd00-4f56-a25d-ca3212db160a",
+      "NAL-NIMT-2"
+    ],
+    [
+      "a86c74e4-a1b6-4c33-bad3-f8f9d437e222",
+      "Onehunga Branch"
+    ],
+    [
+      "7ea0119b-7e3e-4b22-b10c-5193e6e42080",
+      "NAL-NIMT-3"
+    ],
+    [
+      "6bdd3fec-8e69-4213-b97d-b714dd907def",
+      "NAL-NIMT-4"
+    ],
+    [
+      "73a3a625-5e65-4151-a327-626a93127f88",
+      "STRAND-MNK-1"
+    ],
+    [
+      "e16470c1-e6de-4b7a-8c2a-2890c425ddf6",
+      "STRAND-MNK-2"
     ]
   ],
   "text_variables": {}

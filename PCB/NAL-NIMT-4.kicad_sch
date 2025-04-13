@@ -1,0 +1,4351 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "672994de-f8f2-44fa-913e-8891b0bb032a")
+	(paper "A4")
+	(lib_symbols
+		(symbol "PCM_JLCPCB-Extended:LED, WS2812B, 1615"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 1.778 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 5.334 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+				(at -2.286 0.127 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C5349954"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "C5349954"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED, WS2812B, 1615_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "LED, WS2812B, 1615_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LED, WS2812B, 1615_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Paerātā"
+		(exclude_from_sim no)
+		(at 223.52 43.18 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "550b16e0-ee3c-4b9b-9de4-ee54bfc76e98")
+	)
+	(text "Drury"
+		(exclude_from_sim no)
+		(at 63.5 43.18 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "609a9351-3d88-4ff3-b1a2-9feb9e35f604")
+	)
+	(text "Pukekohe (2 + Main)"
+		(exclude_from_sim no)
+		(at 132.08 106.68 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "ccda8002-2794-48e0-b9f6-0ada16cf57d2")
+	)
+	(text "Pukekohe (East 3+4)"
+		(exclude_from_sim no)
+		(at 132.08 76.2 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "e2cb32dd-e7e0-462d-856d-c6e537d61fe3")
+	)
+	(text "Ngākōroa"
+		(exclude_from_sim no)
+		(at 109.22 43.18 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "f597e3bf-a75e-4eec-924d-853fa3c8bc95")
+	)
+	(text "Pukekohe (West 1+Stabling)"
+		(exclude_from_sim no)
+		(at 132.08 137.16 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "ff91ffaa-24d2-4cf3-9718-2fd52279365e")
+	)
+	(wire
+		(pts
+			(xy 142.24 91.44) (xy 139.7 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0caa2e2e-23b7-43cc-b6c2-dacf25b14456")
+	)
+	(wire
+		(pts
+			(xy 284.48 45.72) (xy 30.48 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1832aec1-0747-4958-9053-a7dc8590736c")
+	)
+	(wire
+		(pts
+			(xy 142.24 106.68) (xy 142.24 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b9a21b-f24c-4e59-a90a-396895062fce")
+	)
+	(wire
+		(pts
+			(xy 124.46 91.44) (xy 121.92 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "228852d6-b8b2-4ca3-82ff-3d59e7168deb")
+	)
+	(wire
+		(pts
+			(xy 142.24 76.2) (xy 142.24 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a0a059e-c7ab-4165-86ef-fb33b1a9bfdd")
+	)
+	(wire
+		(pts
+			(xy 116.84 27.94) (xy 124.46 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dd09d19-aeec-4629-bb5a-ee9140eb6162")
+	)
+	(polyline
+		(pts
+			(xy 40.64 60.96) (xy 55.88 73.66)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "5005fe87-40cb-426d-be78-9388228b25e9")
+	)
+	(wire
+		(pts
+			(xy 162.56 27.94) (xy 170.18 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52b93537-262e-46a9-8049-b3ea6d19c73c")
+	)
+	(wire
+		(pts
+			(xy 71.12 27.94) (xy 78.74 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ecde438-686c-400f-b8de-e5fd3418ea65")
+	)
+	(wire
+		(pts
+			(xy 71.12 60.96) (xy 78.74 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e8dd2e3-e074-4a9d-be5d-cc6d33748964")
+	)
+	(wire
+		(pts
+			(xy 142.24 60.96) (xy 139.7 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80cf2cbb-479e-4702-8a26-3ef31bff434d")
+	)
+	(wire
+		(pts
+			(xy 121.92 76.2) (xy 142.24 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b2ce7b8-9612-4d8f-9261-e64967120f26")
+	)
+	(wire
+		(pts
+			(xy 30.48 60.96) (xy 33.02 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91b1544c-50e7-4ff1-b3d0-b685351a5534")
+	)
+	(wire
+		(pts
+			(xy 121.92 106.68) (xy 142.24 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9246c66c-1d54-42c7-8b3e-d648200549b5")
+	)
+	(polyline
+		(pts
+			(xy 86.36 60.96) (xy 71.12 73.66)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "92f90234-dc26-4810-b28e-f40cb0c086fe")
+	)
+	(wire
+		(pts
+			(xy 121.92 121.92) (xy 121.92 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96eaad6c-eee1-404a-855d-5e188ffdb789")
+	)
+	(wire
+		(pts
+			(xy 139.7 27.94) (xy 147.32 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98c6959e-5ac5-44cd-85c6-193bd169dc1f")
+	)
+	(wire
+		(pts
+			(xy 30.48 45.72) (xy 30.48 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3d87b7-47c5-4c60-93e7-1f99770a78fd")
+	)
+	(wire
+		(pts
+			(xy 208.28 27.94) (xy 215.9 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a010cf6d-b09c-4f1a-b125-4a8cf7cb944e")
+	)
+	(wire
+		(pts
+			(xy 231.14 27.94) (xy 284.48 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0636407-38dd-490d-94e0-c2ac39f0a736")
+	)
+	(wire
+		(pts
+			(xy 93.98 60.96) (xy 101.6 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f86ff6-1aec-48a5-aa42-868d115b793b")
+	)
+	(wire
+		(pts
+			(xy 30.48 27.94) (xy 33.02 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b24a4997-0c2c-4d23-8357-6a933a8c33f2")
+	)
+	(wire
+		(pts
+			(xy 48.26 60.96) (xy 55.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bacd1d6b-c4e2-44b1-b4f7-ecd05594d9a2")
+	)
+	(wire
+		(pts
+			(xy 284.48 27.94) (xy 284.48 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf6ad202-e8eb-4acf-854d-3a737e96446e")
+	)
+	(wire
+		(pts
+			(xy 185.42 27.94) (xy 193.04 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3bf2c95-043b-42d2-a800-51fc37039756")
+	)
+	(wire
+		(pts
+			(xy 121.92 91.44) (xy 121.92 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c16382-05b7-4856-bb0f-dcf4ecf6a0c0")
+	)
+	(wire
+		(pts
+			(xy 48.26 27.94) (xy 55.88 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ede3501a-85bd-439b-823a-4a2fa73ee05b")
+	)
+	(wire
+		(pts
+			(xy 116.84 60.96) (xy 124.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6ae2333-917b-436d-a7bf-bc204ae58a50")
+	)
+	(wire
+		(pts
+			(xy 93.98 27.94) (xy 101.6 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6d6a63b-bd31-43d9-a247-570a22fa5a8f")
+	)
+	(wire
+		(pts
+			(xy 124.46 121.92) (xy 121.92 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa99f38-e61d-4990-aecc-f4cf70bc8cf9")
+	)
+	(global_label "NAL-NIMT-4"
+		(shape input)
+		(at 30.48 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8a7fcb79-e978-4886-9b50-c2b33d8d74c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 15.339 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "146ed05a-8348-4b69-9bf8-90c4796377f4")
+		(property "Reference" "#PWR0251"
+			(at 132.08 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4debf752-2ea7-41ae-b2b9-25038dc3a932")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0251")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1565e026-e9aa-4f27-a3ee-d27b5c1f3ac6")
+		(property "Reference" "#PWR0249"
+			(at 109.22 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f770fb8-c9f4-448f-a279-457996ea680e")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0249")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 86.36 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "173cdff2-a63d-4c54-b91e-7e98cfe9559b")
+		(property "Reference" "D194"
+			(at 96.6976 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 96.6976 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 86.36 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 84.074 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 86.36 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 86.36 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b231eb10-68ad-4c2d-ad6e-afde67b29142")
+		)
+		(pin "4"
+			(uuid "39a0a9af-eb86-4e44-80e5-6dbeed787f27")
+		)
+		(pin "3"
+			(uuid "2daf43b3-070c-4d66-b17e-1be0c992188c")
+		)
+		(pin "1"
+			(uuid "d0bc519a-3597-4c04-87a9-6fd47a698dda")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D194")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b7e98cf-3a4b-4e5e-a916-209c7612d5f9")
+		(property "Reference" "#PWR0265"
+			(at 86.36 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "822fa4c0-d30e-41f8-8878-5dae80925227")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0265")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 40.64 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f841161-eafd-4a9b-bc29-74549cabaa1b")
+		(property "Reference" "#PWR0261"
+			(at 40.64 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3005d2f4-5bc3-4d0a-9dd7-fff9fcccee17")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0261")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 132.08 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25cbb9f8-875f-4a03-b2ee-ca4b353763a8")
+		(property "Reference" "#PWR0272"
+			(at 132.08 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 132.08 110.1669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 132.08 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a412ee6d-73a4-4bd3-bf00-3408124195ae")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0272")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "261b0bc7-3f68-4499-a316-43305adb2aa0")
+		(property "Reference" "#PWR0255"
+			(at 177.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02ebe9b0-b3a5-43d9-909d-c69fe0051a0e")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0255")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 40.64 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b5282a5-3457-4def-8351-df375124238b")
+		(property "Reference" "#PWR0260"
+			(at 40.64 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 40.64 49.2069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 40.64 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a40382b-04fb-45b6-9afc-73cce2bda6a1")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0260")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d08aa87-b409-4ca2-bd69-ee4b39adbf43")
+		(property "Reference" "#PWR0245"
+			(at 63.5 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ec951f3-0233-4399-99ee-76f37138e91f")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0245")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 154.94 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fd2eb1b-da40-4d5b-bd7a-93215529520a")
+		(property "Reference" "#PWR0252"
+			(at 154.94 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 154.94 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 154.94 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bded8a3b-f867-486b-b189-83ee1a6f5374")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0252")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 223.52 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "401977ee-7b24-4a88-915b-7b6334a86ce4")
+		(property "Reference" "#PWR0258"
+			(at 223.52 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 223.52 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 223.52 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4eb080c-fa60-4af0-9222-8fee3e5945c2")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0258")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 109.22 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46269d16-3e08-4a30-b82a-6e82885156b8")
+		(property "Reference" "#PWR0266"
+			(at 109.22 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 109.22 49.2069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 109.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec97182b-a943-4852-8bc6-3d02b2b1fce3")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0266")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "483ce5d3-cbdc-4503-ac64-005c7bea569d")
+		(property "Reference" "#PWR0273"
+			(at 132.08 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 133.6731 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20f9b14f-1a2c-4afe-9474-7d5c946f0d9a")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0273")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 223.52 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48faa251-1897-45e2-927e-6097472eec3a")
+		(property "Reference" "D200"
+			(at 233.8576 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 233.8576 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 223.52 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 221.234 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 223.52 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 223.52 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9430f53c-5fac-4ab3-a457-2a67276757c5")
+		)
+		(pin "4"
+			(uuid "83a823f8-497a-43fe-95ac-4f40f20477be")
+		)
+		(pin "3"
+			(uuid "13a7e1bf-ad30-4f00-bc69-f2b285d4dbe2")
+		)
+		(pin "1"
+			(uuid "0f893faa-1f68-4e88-94d6-5f726611fd3a")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D200")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 177.8 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "559917e1-2c73-4b9e-ba76-22bf0deb92fe")
+		(property "Reference" "#PWR0254"
+			(at 177.8 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 177.8 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 177.8 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0495f888-eb25-4d66-a4b2-4d30527e7a91")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0254")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 40.64 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55ed80d7-8963-4e5b-8d3a-a741d7e2ff79")
+		(property "Reference" "D192"
+			(at 50.9776 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 50.9776 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 40.64 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 38.354 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 40.64 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 40.64 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f3f6c346-a108-4a8a-8636-db9901843e2d")
+		)
+		(pin "4"
+			(uuid "c105713f-6947-4e97-9064-a709cc309cf5")
+		)
+		(pin "3"
+			(uuid "789f293e-39fb-40c0-a0f6-be2260778f21")
+		)
+		(pin "1"
+			(uuid "0b3ce6e2-490a-4a0a-9326-1d481cac13fa")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D192")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d3d5cc9-d2a2-4b91-a52a-88dc5e83b5f4")
+		(property "Reference" "#PWR0257"
+			(at 200.66 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "218c9621-a04b-45c2-9e59-d2e983072eaf")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0257")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6da2650e-407e-48bf-9280-0b75852f4f67")
+		(property "Reference" "#PWR0263"
+			(at 63.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9149da5a-e79a-4ec0-aac3-d8fdb18f5432")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0263")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 40.64 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "720fe7b7-911b-4da3-bb25-ef52ba9e400e")
+		(property "Reference" "D201"
+			(at 50.9776 54.7134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 50.9776 57.1377 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 40.64 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 38.354 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 40.64 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 40.64 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3b303266-95ef-4093-b863-34b69889e008")
+		)
+		(pin "4"
+			(uuid "c827e8c5-37cb-49e8-bcee-4d4be31f5d6f")
+		)
+		(pin "3"
+			(uuid "665892c1-4bac-40f1-a6f7-458843cc045b")
+		)
+		(pin "1"
+			(uuid "a313c343-a083-43ed-bc29-f5a9efb4c700")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 200.66 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ad45a6f-b27a-4634-8da9-ff9a1e3c5996")
+		(property "Reference" "D199"
+			(at 210.9976 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 210.9976 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 198.374 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 200.66 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 200.66 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4bab73e0-68d7-4604-8d11-16ea2f1ed7e4")
+		)
+		(pin "4"
+			(uuid "206d61a4-42a0-408a-bd2d-e4202e40118a")
+		)
+		(pin "3"
+			(uuid "e73a14a2-e8fa-4cc4-a7c2-d7c97469115b")
+		)
+		(pin "1"
+			(uuid "b5b879ab-f2ef-4f7b-8cc7-f5de00b3a8a7")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D199")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 132.08 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d265e99-29fa-4f22-9b9a-2cbcaf539878")
+		(property "Reference" "#PWR0270"
+			(at 132.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 132.08 79.6869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f90f20c9-d2e2-4234-b67a-a1a07ac73d56")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0270")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 63.5 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83099133-792d-4b16-bfd5-3748a5c1fea6")
+		(property "Reference" "D202"
+			(at 73.8376 54.7134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.8376 57.1377 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 63.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 61.214 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 63.5 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 63.5 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf387a30-7a25-4a09-9f85-935b8351ca01")
+		)
+		(pin "4"
+			(uuid "93337ad2-1939-491e-b5ce-2e8f8d87c7a9")
+		)
+		(pin "3"
+			(uuid "2384fd74-8f40-4fbc-a781-f65c2026836d")
+		)
+		(pin "1"
+			(uuid "b8aee783-53c1-46b9-9094-8fe2ce729412")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 40.64 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91139753-d0db-4c1d-b735-f4e8e4027331")
+		(property "Reference" "#PWR0243"
+			(at 40.64 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cd39fa9-b0ce-4ae2-87dd-697a576f88c8")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0243")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 109.22 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3c67732-7c5a-4d16-a1d8-c885d3a0a790")
+		(property "Reference" "D195"
+			(at 119.5576 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 119.5576 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 109.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 106.934 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "329d54a3-1ea4-4f94-a2c1-e7fc37b6f60b")
+		)
+		(pin "4"
+			(uuid "0f0694e7-aa5d-473b-9011-d8c4994fd03d")
+		)
+		(pin "3"
+			(uuid "cb76fe6f-9452-459c-8e77-0f40eac3b3b2")
+		)
+		(pin "1"
+			(uuid "76a51000-777f-4709-8b3c-e7fb3e0836f1")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D195")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 63.5 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7a72631-7b1a-45b9-afa9-d8f7e9a1cce8")
+		(property "Reference" "#PWR0262"
+			(at 63.5 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 63.5 49.2069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 63.5 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3cc3681-68a5-4537-a275-7e05e8f8e07b")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0262")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a998f1c5-8989-4303-a916-c70120dbe460")
+		(property "Reference" "#PWR0247"
+			(at 86.36 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e14f3fc5-ac58-4cb7-9fad-b8d8c9c171a5")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0247")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 132.08 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "add6af79-8ae0-4ec2-93a1-6fa25478746d")
+		(property "Reference" "D206"
+			(at 142.4176 85.1934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 142.4176 87.6177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 132.08 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 129.794 91.313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 132.08 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 132.08 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f88ef0f5-a654-4146-a9ae-9e850c9bfd19")
+		)
+		(pin "4"
+			(uuid "9da2d1c8-02ec-483a-9a41-57fc68a02529")
+		)
+		(pin "3"
+			(uuid "209e224f-02cb-4537-a58b-ac60e0dd466d")
+		)
+		(pin "1"
+			(uuid "f54124ff-04db-46ad-9b06-950758b706f7")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 132.08 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1ea5501-a39e-4406-9d34-915a5c111519")
+		(property "Reference" "D196"
+			(at 142.4176 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 142.4176 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 132.08 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 129.794 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 132.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 132.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ab08fcd-0802-40df-9913-127ea1583700")
+		)
+		(pin "4"
+			(uuid "11b8ba53-dbaf-475f-b543-ba76aab2d090")
+		)
+		(pin "3"
+			(uuid "f94aa8a1-0e0b-4048-b08f-825dce2dc8aa")
+		)
+		(pin "1"
+			(uuid "73a03448-b900-41cc-bbaf-a5c11ccf94f9")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D196")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 109.22 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b350039b-6d7e-427e-8bbb-3c3e71b5f53d")
+		(property "Reference" "#PWR0248"
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 109.22 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 109.22 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d939af81-df56-4beb-a0bf-cb2366d827d5")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0248")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 200.66 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b35a9c82-efb6-44fc-b342-1f9e231484ed")
+		(property "Reference" "#PWR0256"
+			(at 200.66 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 200.66 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 200.66 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84713040-4720-430f-b75b-0c660b2017f4")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0256")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 109.22 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b966ff9c-93c8-4568-902c-1833fcba0ea2")
+		(property "Reference" "D204"
+			(at 119.5576 54.7134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 119.5576 57.1377 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 109.22 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 106.934 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 109.22 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 109.22 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c63b9118-020f-4fbb-93df-4e3388950120")
+		)
+		(pin "4"
+			(uuid "158acd8b-187e-4ff5-9081-6610dd5a66c0")
+		)
+		(pin "3"
+			(uuid "f3a7e6ef-a04b-4e42-aa41-a51374e36eb3")
+		)
+		(pin "1"
+			(uuid "a017b450-59ff-459d-b616-de83d8c5cd03")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc026a0a-995a-4885-9009-483f9ab2fd0b")
+		(property "Reference" "#PWR0267"
+			(at 109.22 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7f53b99-1baf-49ce-a56a-f33027a52533")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0267")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 132.08 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be2ae9d9-b67a-467a-a7c7-4f2b8b0274c7")
+		(property "Reference" "#PWR0268"
+			(at 132.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 132.08 49.2069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3f4c0cd-a297-44c7-8d92-4fd79b92c107")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0268")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 154.94 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be44cf81-7f85-44a0-b9ba-ab587caea6bf")
+		(property "Reference" "#PWR0253"
+			(at 154.94 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb51f762-dddb-4842-88f1-4a78737f64dc")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0253")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 63.5 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2cd485a-03f8-4242-8862-7fb1e1ff4a07")
+		(property "Reference" "#PWR0244"
+			(at 63.5 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 63.5 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 63.5 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d72bc7c8-4b11-4da1-96f2-842919b9e08c")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0244")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 177.8 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "caaa3fc1-9636-4218-a264-046c8b70a865")
+		(property "Reference" "D198"
+			(at 188.1376 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 188.1376 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 175.514 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 177.8 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 177.8 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a53a7f54-d85f-40b2-893c-a3e4ec034a00")
+		)
+		(pin "4"
+			(uuid "3913278a-a4e2-407d-bf28-765e74462878")
+		)
+		(pin "3"
+			(uuid "0ed0c21e-8d82-40f0-a65e-d9847c29c53d")
+		)
+		(pin "1"
+			(uuid "516ada59-1012-47a4-aaa9-5ce6cc980eae")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D198")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 86.36 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbfe5b04-72af-45d2-80e2-d4afa2698825")
+		(property "Reference" "#PWR0246"
+			(at 86.36 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 86.36 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 86.36 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "430c430f-8e4f-43c8-a178-b24c2cfde08c")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0246")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 63.5 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf63f2a1-d1aa-4fec-9244-b36f743a8ed0")
+		(property "Reference" "D193"
+			(at 73.8376 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 73.8376 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 63.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 61.214 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 63.5 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 63.5 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1aac2fae-4829-4a01-85b2-7304a618d173")
+		)
+		(pin "4"
+			(uuid "3ee9ac96-6d46-4917-bf61-4749cbbc97e7")
+		)
+		(pin "3"
+			(uuid "e1622212-1f34-4119-9e6c-ad47cb6283fb")
+		)
+		(pin "1"
+			(uuid "412aecc9-fcf7-4aa5-93e2-c2475d55f73a")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D193")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 132.08 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d02e7523-22f2-4981-be87-2ee502cf6cb5")
+		(property "Reference" "#PWR0250"
+			(at 132.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 132.08 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55f6f43a-c885-4b95-81b3-eb9b3b1e3437")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0250")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 132.08 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0a3bc67-072d-48f5-b7ce-ccee610306f4")
+		(property "Reference" "D205"
+			(at 142.4176 54.7134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 142.4176 57.1377 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 132.08 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 129.794 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d4b8d895-1170-48ce-bc0d-c875e1c00a64")
+		)
+		(pin "4"
+			(uuid "ffc0e64e-f822-4a14-861d-3f792e9c78d2")
+		)
+		(pin "3"
+			(uuid "857228b6-ffbd-4f5b-a40e-e85a49e21395")
+		)
+		(pin "1"
+			(uuid "578e4685-dbb0-4f6c-969e-1a7f1c505e4b")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 86.36 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0bffc81-abac-4ccf-8708-66326e7ae9e3")
+		(property "Reference" "#PWR0264"
+			(at 86.36 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 86.36 49.2069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e73d848a-b2af-4ab3-a8d3-ce320286d2de")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0264")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1663c4e-2e29-4e5a-a98d-5c7472fef46e")
+		(property "Reference" "#PWR0271"
+			(at 132.08 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 103.1931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b8e3546-290a-4d05-a19c-47921b9fc1d0")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0271")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d66fd5da-9799-410c-ba04-c51528d140b9")
+		(property "Reference" "#PWR0269"
+			(at 132.08 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7dae53d2-c9a7-4c2d-9236-8d12947a77e8")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0269")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 223.52 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f533b5d9-cf4a-40ac-9de3-81be080dfabe")
+		(property "Reference" "#PWR0259"
+			(at 223.52 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 39.6931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fdd6ef70-d792-4dad-b075-27f973fcc237")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0259")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 154.94 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f87ea87d-a3f1-4349-b1b4-56f4afad4357")
+		(property "Reference" "D197"
+			(at 165.2776 21.6934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 165.2776 24.1177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 154.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 152.654 27.813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 154.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 154.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e6966994-1fed-489a-8353-b2c73be431a9")
+		)
+		(pin "4"
+			(uuid "6acfc65c-1c7b-405a-b2b2-99e8b3cc959a")
+		)
+		(pin "3"
+			(uuid "38abec9e-720f-4979-85b8-32fc5061f2f7")
+		)
+		(pin "1"
+			(uuid "0dbcf581-b1b7-4b07-a866-e3537fb9188e")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D197")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 132.08 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9b0d74c-5911-4504-8a7c-dec154ccd5c4")
+		(property "Reference" "D207"
+			(at 142.4176 115.6734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 142.4176 118.0977 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 132.08 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 129.794 121.793 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 132.08 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 132.08 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "73c3b6a1-3b1b-427c-bab3-963cb4744d66")
+		)
+		(pin "4"
+			(uuid "e919ada4-5ef9-4790-ae63-31c873efb896")
+		)
+		(pin "3"
+			(uuid "6740dda2-eb21-4ffb-8d44-09318775252d")
+		)
+		(pin "1"
+			(uuid "04975504-e5e2-4c1c-9bed-52e7d957ff55")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 40.64 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9b213d8-5ab1-47da-9795-58ff0c927e85")
+		(property "Reference" "#PWR0242"
+			(at 40.64 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 40.64 16.1869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 40.64 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b63cdde-5c32-4c51-8a9e-8ddf6a91cf0c")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "#PWR0242")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 86.36 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fac18518-3326-4866-928f-332fcbdef24a")
+		(property "Reference" "D203"
+			(at 96.6976 54.7134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 96.6976 57.1377 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 86.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 84.074 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 86.36 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20cffc79-cc59-4bd2-a78c-d5df96e53030")
+		)
+		(pin "4"
+			(uuid "6a396ebd-0f8e-4c45-8f9d-693cd53de755")
+		)
+		(pin "3"
+			(uuid "cc3bfd0e-6172-4975-afc3-e101c5d2319c")
+		)
+		(pin "1"
+			(uuid "4356a8f7-5368-4d45-861a-fa733852f606")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+					(reference "D203")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
