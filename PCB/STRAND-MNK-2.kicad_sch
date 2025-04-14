@@ -722,7 +722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "410407dc-d7ba-4d57-bdd6-7b96f2436bd8")
-		(property "Reference" "D344"
+		(property "Reference" "D342"
 			(at 134.7976 21.6934 0)
 			(effects
 				(font
@@ -791,7 +791,7 @@
 		(instances
 			(project "Auckland-LED-Train-Map"
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/73a3a625-5e65-4151-a327-626a93127f88/e16470c1-e6de-4b7a-8c2a-2890c425ddf6"
-					(reference "D344")
+					(reference "D342")
 					(unit 1)
 				)
 			)
@@ -807,7 +807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c9387ae-264c-4202-b0f4-44ef7ddfefbe")
-		(property "Reference" "D345"
+		(property "Reference" "D343"
 			(at 157.6576 21.6934 0)
 			(effects
 				(font
@@ -876,7 +876,7 @@
 		(instances
 			(project "Auckland-LED-Train-Map"
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/73a3a625-5e65-4151-a327-626a93127f88/e16470c1-e6de-4b7a-8c2a-2890c425ddf6"
-					(reference "D345")
+					(reference "D343")
 					(unit 1)
 				)
 			)
@@ -958,7 +958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b6e2720-d346-4eba-8a77-673b2552c38b")
-		(property "Reference" "D343"
+		(property "Reference" "D341"
 			(at 111.9376 21.6934 0)
 			(effects
 				(font
@@ -1027,7 +1027,7 @@
 		(instances
 			(project "Auckland-LED-Train-Map"
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/73a3a625-5e65-4151-a327-626a93127f88/e16470c1-e6de-4b7a-8c2a-2890c425ddf6"
-					(reference "D343")
+					(reference "D341")
 					(unit 1)
 				)
 			)
@@ -1373,7 +1373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fcc850b9-5ae8-4331-829d-c3c76e5057a1")
-		(property "Reference" "D342"
+		(property "Reference" "D340"
 			(at 50.9776 21.6934 0)
 			(effects
 				(font
@@ -1442,7 +1442,7 @@
 		(instances
 			(project "Auckland-LED-Train-Map"
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/73a3a625-5e65-4151-a327-626a93127f88/e16470c1-e6de-4b7a-8c2a-2890c425ddf6"
-					(reference "D342")
+					(reference "D340")
 					(unit 1)
 				)
 			)
