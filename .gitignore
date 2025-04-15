@@ -26,6 +26,5 @@ fp-info-cache
 *.dsn
 *.ses
 
-# Exported BOM files
-*.xml
-*.csv
+# Exclude JLCPCB production outputs
+PCB/jlcpcb/
