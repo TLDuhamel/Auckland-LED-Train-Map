@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3,
-          "height": 0.5,
-          "width": 0.5
+          "drill": 0.0,
+          "height": 0.6,
+          "width": 1.48
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -90,7 +90,7 @@
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
-        "malformed_courtyard": "error",
+        "malformed_courtyard": "warning",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "warning",
@@ -715,16 +715,12 @@
       "Root"
     ],
     [
-      "92ce81e1-4cc3-49ef-ad06-c735ef324c34",
+      "081abeee-8e28-48da-a70f-ee01407c3b3b",
       "NAL-NIMT-1"
     ],
     [
       "2bdc9a9d-cd00-4f56-a25d-ca3212db160a",
       "NAL-NIMT-2"
-    ],
-    [
-      "a86c74e4-a1b6-4c33-bad3-f8f9d437e222",
-      "Onehunga Branch"
     ],
     [
       "7ea0119b-7e3e-4b22-b10c-5193e6e42080",
@@ -735,7 +731,11 @@
       "NAL-NIMT-4"
     ],
     [
-      "73a3a625-5e65-4151-a327-626a93127f88",
+      "a86c74e4-a1b6-4c33-bad3-f8f9d437e222",
+      "Onehunga Branch"
+    ],
+    [
+      "dbd0708e-69d8-4d43-bcc7-3988563b469e",
       "STRAND-MNK-1"
     ],
     [

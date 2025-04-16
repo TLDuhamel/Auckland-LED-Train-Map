@@ -1507,11 +1507,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4debf752-2ea7-41ae-b2b9-25038dc3a932")
+			(uuid "bbbc9f8c-5eb3-4f29-a8af-1c7074f4c442")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0251")
 					(unit 1)
 				)
@@ -1573,11 +1573,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "7f770fb8-c9f4-448f-a279-457996ea680e")
+			(uuid "44e903b4-5ac4-46a7-b6b6-5125207c0fda")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0249")
 					(unit 1)
 				)
@@ -1649,20 +1649,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "b231eb10-68ad-4c2d-ad6e-afde67b29142")
+			(uuid "9d52a627-493c-4cce-bb9a-ba7b2ec9c8cf")
 		)
 		(pin "4"
-			(uuid "39a0a9af-eb86-4e44-80e5-6dbeed787f27")
+			(uuid "6cf70411-a53b-420c-a9d0-894c44f648f3")
 		)
 		(pin "3"
-			(uuid "2daf43b3-070c-4d66-b17e-1be0c992188c")
+			(uuid "be28a465-c9aa-4606-981e-8bf8901a13ca")
 		)
 		(pin "1"
-			(uuid "d0bc519a-3597-4c04-87a9-6fd47a698dda")
+			(uuid "55bd7cb2-7364-4862-9fec-9eac390a5bd3")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D194")
 					(unit 1)
 				)
@@ -1724,11 +1724,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "822fa4c0-d30e-41f8-8878-5dae80925227")
+			(uuid "13405468-f553-41a3-bdde-f626a07e4d3c")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0265")
 					(unit 1)
 				)
@@ -1790,11 +1790,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3005d2f4-5bc3-4d0a-9dd7-fff9fcccee17")
+			(uuid "d80ca2d2-6951-402b-ab84-261a6f5263f0")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0261")
 					(unit 1)
 				)
@@ -1856,11 +1856,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a412ee6d-73a4-4bd3-bf00-3408124195ae")
+			(uuid "5345272e-0365-4bdf-96cd-f7daecffd730")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0272")
 					(unit 1)
 				)
@@ -1922,11 +1922,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "02ebe9b0-b3a5-43d9-909d-c69fe0051a0e")
+			(uuid "1ae6096f-7aac-4a53-93c5-586f7b6df17a")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0255")
 					(unit 1)
 				)
@@ -1988,11 +1988,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4a40382b-04fb-45b6-9afc-73cce2bda6a1")
+			(uuid "cea22ea2-6dc3-4fca-84cc-3c885b7b84dd")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0260")
 					(unit 1)
 				)
@@ -2054,11 +2054,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ec951f3-0233-4399-99ee-76f37138e91f")
+			(uuid "5d78e1b7-18d9-4611-950c-a04e00f57a04")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0245")
 					(unit 1)
 				)
@@ -2120,11 +2120,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "bded8a3b-f867-486b-b189-83ee1a6f5374")
+			(uuid "9ce0f99b-9233-4a0a-a49d-0d161d66c9ae")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0252")
 					(unit 1)
 				)
@@ -2186,11 +2186,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "b4eb080c-fa60-4af0-9222-8fee3e5945c2")
+			(uuid "8409a9d1-b47d-4f4f-94ae-a1eb05d1b8ce")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0258")
 					(unit 1)
 				)
@@ -2252,11 +2252,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec97182b-a943-4852-8bc6-3d02b2b1fce3")
+			(uuid "2767eb08-38c6-499e-a299-0494e38bb2c4")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0266")
 					(unit 1)
 				)
@@ -2318,11 +2318,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "20f9b14f-1a2c-4afe-9474-7d5c946f0d9a")
+			(uuid "1fc42c35-1c7a-42c1-8c7f-7d8ac0b14e29")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0273")
 					(unit 1)
 				)
@@ -2394,20 +2394,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "9430f53c-5fac-4ab3-a457-2a67276757c5")
+			(uuid "be3af0e1-ffaf-4521-9e5e-97116bc2a4df")
 		)
 		(pin "4"
-			(uuid "83a823f8-497a-43fe-95ac-4f40f20477be")
+			(uuid "031e1216-317a-4077-86ed-7b00d52b7b54")
 		)
 		(pin "3"
-			(uuid "13a7e1bf-ad30-4f00-bc69-f2b285d4dbe2")
+			(uuid "880b3198-5ed9-4abf-bfdd-2e4a009e98c3")
 		)
 		(pin "1"
-			(uuid "0f893faa-1f68-4e88-94d6-5f726611fd3a")
+			(uuid "18df55bc-9e18-43c3-bddd-98eba5f3aea3")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D200")
 					(unit 1)
 				)
@@ -2596,14 +2596,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "2c375222-4db0-4df0-88ce-f890acf3d29c")
+			(uuid "47859dfc-d164-46d2-931c-6c8f27cd25d8")
 		)
 		(pin "2"
-			(uuid "80c20f41-08e9-4d0d-95cf-54f06bbe69d0")
+			(uuid "8416700d-418a-4d42-a12b-36e5a899f1a6")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "C26")
 					(unit 1)
 				)
@@ -2665,11 +2665,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0495f888-eb25-4d66-a4b2-4d30527e7a91")
+			(uuid "668e4095-65ac-4803-b5e8-50b7f5ebe2cd")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0254")
 					(unit 1)
 				)
@@ -2741,20 +2741,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "f3f6c346-a108-4a8a-8636-db9901843e2d")
+			(uuid "5f46fabe-ba8f-492f-ab74-69d552211d1e")
 		)
 		(pin "4"
-			(uuid "c105713f-6947-4e97-9064-a709cc309cf5")
+			(uuid "fa56c366-f4b2-4395-ab32-15c08348e35f")
 		)
 		(pin "3"
-			(uuid "789f293e-39fb-40c0-a0f6-be2260778f21")
+			(uuid "ae0c27bc-56bf-4139-8207-525744bc7558")
 		)
 		(pin "1"
-			(uuid "0b3ce6e2-490a-4a0a-9326-1d481cac13fa")
+			(uuid "1461ada3-cf6c-4736-ae2e-aeed024e771e")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D192")
 					(unit 1)
 				)
@@ -2943,14 +2943,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "16f9cf3d-733e-4466-af77-086de24a064b")
+			(uuid "f8453b5f-0a8e-4918-9ff1-ea71b2bdd4d6")
 		)
 		(pin "1"
-			(uuid "89324d39-ec1d-474a-8c40-ebea69d1496d")
+			(uuid "328ebe9b-50ac-4656-a4b2-0760c026103e")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "C28")
 					(unit 1)
 				)
@@ -3012,11 +3012,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "218c9621-a04b-45c2-9e59-d2e983072eaf")
+			(uuid "4f404f7b-d5b2-4d8a-9b62-21433b8a1d67")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0257")
 					(unit 1)
 				)
@@ -3078,11 +3078,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9149da5a-e79a-4ec0-aac3-d8fdb18f5432")
+			(uuid "80b1bb67-a24c-4473-a878-7608c10eaa08")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0263")
 					(unit 1)
 				)
@@ -3154,20 +3154,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "3b303266-95ef-4093-b863-34b69889e008")
+			(uuid "c4ec88d4-31be-4220-b5a3-4a242fbd5f68")
 		)
 		(pin "4"
-			(uuid "c827e8c5-37cb-49e8-bcee-4d4be31f5d6f")
+			(uuid "04f478cc-65dc-4e15-836b-ba0e8fd85005")
 		)
 		(pin "3"
-			(uuid "665892c1-4bac-40f1-a6f7-458843cc045b")
+			(uuid "a6e3229f-096b-4111-8134-f83e3393fda5")
 		)
 		(pin "1"
-			(uuid "a313c343-a083-43ed-bc29-f5a9efb4c700")
+			(uuid "b30db196-87ca-4705-9f85-03ae02d9ea71")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D201")
 					(unit 1)
 				)
@@ -3239,20 +3239,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "4bab73e0-68d7-4604-8d11-16ea2f1ed7e4")
+			(uuid "7c488cde-96d0-4947-a725-dcda54b6e507")
 		)
 		(pin "4"
-			(uuid "206d61a4-42a0-408a-bd2d-e4202e40118a")
+			(uuid "f1bf9e51-778a-4f57-be82-036f13548c86")
 		)
 		(pin "3"
-			(uuid "e73a14a2-e8fa-4cc4-a7c2-d7c97469115b")
+			(uuid "28369a2b-6566-4a8a-b47c-d483aec3d9f9")
 		)
 		(pin "1"
-			(uuid "b5b879ab-f2ef-4f7b-8cc7-f5de00b3a8a7")
+			(uuid "caa43fc0-8ac6-458b-be6b-a738aa05828d")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D199")
 					(unit 1)
 				)
@@ -3314,11 +3314,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f90f20c9-d2e2-4234-b67a-a1a07ac73d56")
+			(uuid "afdb64d3-5fb4-4694-9f4d-f9e47127dddc")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0270")
 					(unit 1)
 				)
@@ -3390,20 +3390,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "bf387a30-7a25-4a09-9f85-935b8351ca01")
+			(uuid "ea6f1dc7-d43e-4972-aef7-74574c5aa13d")
 		)
 		(pin "4"
-			(uuid "93337ad2-1939-491e-b5ce-2e8f8d87c7a9")
+			(uuid "b42d81d3-2868-469e-8944-96346b677fba")
 		)
 		(pin "3"
-			(uuid "2384fd74-8f40-4fbc-a781-f65c2026836d")
+			(uuid "7c10b212-d5af-4e34-b0c0-3d96f28d1c50")
 		)
 		(pin "1"
-			(uuid "b8aee783-53c1-46b9-9094-8fe2ce729412")
+			(uuid "9e75183b-6197-400f-a20e-454280f7e4cd")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D202")
 					(unit 1)
 				)
@@ -3465,11 +3465,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "cfc136ce-bedb-4d4d-a804-2e0d2397a8c6")
+			(uuid "8fb043b9-e079-4d65-b2ac-8745f95b4032")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -3531,11 +3531,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "bdf38311-0cc3-4786-8c71-8b1262b405b3")
+			(uuid "c99a4b6d-84a8-4f4a-88b4-bc6cc29eb69d")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -3597,11 +3597,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2cd39fa9-b0ce-4ae2-87dd-697a576f88c8")
+			(uuid "4cbe3496-4c34-48a4-ac65-04d2914cb2ed")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0243")
 					(unit 1)
 				)
@@ -3790,14 +3790,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "32a31042-00c7-4b7c-baf7-ad9f7cbf92d0")
+			(uuid "efb014f4-803a-4dec-b26b-e9aeeec28f3f")
 		)
 		(pin "1"
-			(uuid "da0661b7-58c2-46e9-9811-45376df64929")
+			(uuid "d685df29-488e-4174-a593-8bfd07c3b82f")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "C27")
 					(unit 1)
 				)
@@ -3869,20 +3869,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "329d54a3-1ea4-4f94-a2c1-e7fc37b6f60b")
+			(uuid "e0d569ba-9775-434d-af14-ce4dc30ea4c8")
 		)
 		(pin "4"
-			(uuid "0f0694e7-aa5d-473b-9011-d8c4994fd03d")
+			(uuid "20a2ca12-ee35-437d-b5b2-22519a3ef63a")
 		)
 		(pin "3"
-			(uuid "cb76fe6f-9452-459c-8e77-0f40eac3b3b2")
+			(uuid "2b03f00d-b5fe-4100-af82-a728e82ca09d")
 		)
 		(pin "1"
-			(uuid "76a51000-777f-4709-8b3c-e7fb3e0836f1")
+			(uuid "e0855429-37bb-4a4c-936a-d3c553f23a49")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D195")
 					(unit 1)
 				)
@@ -3944,11 +3944,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3cc3681-68a5-4537-a275-7e05e8f8e07b")
+			(uuid "521f9d49-26eb-4781-b462-3fd3f4bac0ec")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0262")
 					(unit 1)
 				)
@@ -4010,11 +4010,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "e14f3fc5-ac58-4cb7-9fad-b8d8c9c171a5")
+			(uuid "fa4b85be-91a1-4932-b9d4-c92e819bff83")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0247")
 					(unit 1)
 				)
@@ -4086,20 +4086,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "f88ef0f5-a654-4146-a9ae-9e850c9bfd19")
+			(uuid "8a6c76f5-ab9d-49fa-b586-92f3382cd2bc")
 		)
 		(pin "4"
-			(uuid "9da2d1c8-02ec-483a-9a41-57fc68a02529")
+			(uuid "44fc30eb-1bd8-4694-9cce-d4a986764ec6")
 		)
 		(pin "3"
-			(uuid "209e224f-02cb-4537-a58b-ac60e0dd466d")
+			(uuid "58bf16fb-3ab6-44b8-932f-e7a8bf6de971")
 		)
 		(pin "1"
-			(uuid "f54124ff-04db-46ad-9b06-950758b706f7")
+			(uuid "8465ef50-d852-4c45-80a0-effc8f457098")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D206")
 					(unit 1)
 				)
@@ -4171,20 +4171,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "7ab08fcd-0802-40df-9913-127ea1583700")
+			(uuid "99fb4c14-01af-4270-ae09-ce256509c453")
 		)
 		(pin "4"
-			(uuid "11b8ba53-dbaf-475f-b543-ba76aab2d090")
+			(uuid "ec828f38-f200-454f-a41b-39afd071a978")
 		)
 		(pin "3"
-			(uuid "f94aa8a1-0e0b-4048-b08f-825dce2dc8aa")
+			(uuid "42320d02-d96a-4854-975c-0a35859b4115")
 		)
 		(pin "1"
-			(uuid "73a03448-b900-41cc-bbaf-a5c11ccf94f9")
+			(uuid "ffb8da26-dd14-4819-b29a-dfe44c53d724")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D196")
 					(unit 1)
 				)
@@ -4246,11 +4246,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d939af81-df56-4beb-a0bf-cb2366d827d5")
+			(uuid "a411636b-8623-4f09-bb9b-06e072d71643")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0248")
 					(unit 1)
 				)
@@ -4312,11 +4312,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "84713040-4720-430f-b75b-0c660b2017f4")
+			(uuid "10ad300a-58fb-463c-9796-b781714f2810")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0256")
 					(unit 1)
 				)
@@ -4388,20 +4388,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "c63b9118-020f-4fbb-93df-4e3388950120")
+			(uuid "baf4029f-e5a6-4866-b093-14457cdec393")
 		)
 		(pin "4"
-			(uuid "158acd8b-187e-4ff5-9081-6610dd5a66c0")
+			(uuid "62824946-988b-4b9d-b75d-60f69e9266bf")
 		)
 		(pin "3"
-			(uuid "f3a7e6ef-a04b-4e42-aa41-a51374e36eb3")
+			(uuid "78779709-4ae1-408f-b375-f96c98ecb5b5")
 		)
 		(pin "1"
-			(uuid "a017b450-59ff-459d-b616-de83d8c5cd03")
+			(uuid "5f89081e-9216-401f-8bd4-807f0a259161")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D204")
 					(unit 1)
 				)
@@ -4463,11 +4463,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7f53b99-1baf-49ce-a56a-f33027a52533")
+			(uuid "5a2059dc-08c0-4ac9-be5a-7189fe0f014a")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0267")
 					(unit 1)
 				)
@@ -4529,11 +4529,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d3f4c0cd-a297-44c7-8d92-4fd79b92c107")
+			(uuid "0f3c2e54-ef55-4bbe-b8bb-9b6ce8b4d3a7")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0268")
 					(unit 1)
 				)
@@ -4595,11 +4595,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "bb51f762-dddb-4842-88f1-4a78737f64dc")
+			(uuid "cddd32a8-5957-448d-8c41-8a6cb2c72097")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0253")
 					(unit 1)
 				)
@@ -4661,11 +4661,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d72bc7c8-4b11-4da1-96f2-842919b9e08c")
+			(uuid "980b6473-075d-4e26-985f-87a5f6e83f02")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0244")
 					(unit 1)
 				)
@@ -4737,20 +4737,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "a53a7f54-d85f-40b2-893c-a3e4ec034a00")
+			(uuid "cc9d2aa5-53bc-49ea-bf45-ece0908e63ba")
 		)
 		(pin "4"
-			(uuid "3913278a-a4e2-407d-bf28-765e74462878")
+			(uuid "f0dc7be7-d04a-4a13-9f3d-f441770b3795")
 		)
 		(pin "3"
-			(uuid "0ed0c21e-8d82-40f0-a65e-d9847c29c53d")
+			(uuid "e7669b89-7be0-434d-89b1-4c8a74aa6c31")
 		)
 		(pin "1"
-			(uuid "516ada59-1012-47a4-aaa9-5ce6cc980eae")
+			(uuid "acb30e22-8360-41e0-bedd-cfa8f030f06e")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D198")
 					(unit 1)
 				)
@@ -4812,11 +4812,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "430c430f-8e4f-43c8-a178-b24c2cfde08c")
+			(uuid "93e8e4ec-ba5f-4f9d-81ff-351d06310f6c")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0246")
 					(unit 1)
 				)
@@ -4888,20 +4888,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "1aac2fae-4829-4a01-85b2-7304a618d173")
+			(uuid "908ee85d-00ca-4678-968b-ff7b8945c0cf")
 		)
 		(pin "4"
-			(uuid "3ee9ac96-6d46-4917-bf61-4749cbbc97e7")
+			(uuid "05229e9e-a1ce-4684-8f7b-77398063b847")
 		)
 		(pin "3"
-			(uuid "e1622212-1f34-4119-9e6c-ad47cb6283fb")
+			(uuid "2bafba7d-2658-4544-bc53-0908c2a67191")
 		)
 		(pin "1"
-			(uuid "412aecc9-fcf7-4aa5-93e2-c2475d55f73a")
+			(uuid "1fafa9fc-7a5c-46c6-a4e4-7d79295035b1")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D193")
 					(unit 1)
 				)
@@ -4963,11 +4963,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "55f6f43a-c885-4b95-81b3-eb9b3b1e3437")
+			(uuid "4d88533a-e432-4cc7-a8bb-5acc8542ff73")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0250")
 					(unit 1)
 				)
@@ -5039,20 +5039,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "d4b8d895-1170-48ce-bc0d-c875e1c00a64")
+			(uuid "787d3c74-a267-45e4-8715-2f6f9c9b5698")
 		)
 		(pin "4"
-			(uuid "ffc0e64e-f822-4a14-861d-3f792e9c78d2")
+			(uuid "eae2aa9a-4da2-44e9-8f6b-bada2f5754e1")
 		)
 		(pin "3"
-			(uuid "857228b6-ffbd-4f5b-a40e-e85a49e21395")
+			(uuid "e3b39c89-c86e-4b4c-a7f4-2dc00033382d")
 		)
 		(pin "1"
-			(uuid "578e4685-dbb0-4f6c-969e-1a7f1c505e4b")
+			(uuid "757929c5-d309-43c6-bbed-2aaa8240ce7a")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D205")
 					(unit 1)
 				)
@@ -5114,11 +5114,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "e73d848a-b2af-4ab3-a8d3-ce320286d2de")
+			(uuid "2c1538f4-abf3-4a81-be49-bd58db3b8399")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0264")
 					(unit 1)
 				)
@@ -5180,11 +5180,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "7b8e3546-290a-4d05-a19c-47921b9fc1d0")
+			(uuid "f4ca4b19-cd4f-4dc4-8b25-ed11e96dd230")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0271")
 					(unit 1)
 				)
@@ -5246,11 +5246,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "7dae53d2-c9a7-4c2d-9236-8d12947a77e8")
+			(uuid "43bcd18b-b1c4-4376-a38e-8b36d63a9113")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0269")
 					(unit 1)
 				)
@@ -5312,11 +5312,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "fdd6ef70-d792-4dad-b075-27f973fcc237")
+			(uuid "1e58ad75-fbc7-409f-a0eb-66a83cf368f9")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0259")
 					(unit 1)
 				)
@@ -5388,20 +5388,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "e6966994-1fed-489a-8353-b2c73be431a9")
+			(uuid "da4c04c5-9483-4ee6-802a-a7d0ddbcbb16")
 		)
 		(pin "4"
-			(uuid "6acfc65c-1c7b-405a-b2b2-99e8b3cc959a")
+			(uuid "be53f30a-849c-45b7-a9d5-228f21354c7a")
 		)
 		(pin "3"
-			(uuid "38abec9e-720f-4979-85b8-32fc5061f2f7")
+			(uuid "79279d4e-1dd7-411c-add2-c535665ebac7")
 		)
 		(pin "1"
-			(uuid "0dbcf581-b1b7-4b07-a866-e3537fb9188e")
+			(uuid "69eec056-0447-4400-b368-76afca0dd5c6")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D197")
 					(unit 1)
 				)
@@ -5473,20 +5473,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "73c3b6a1-3b1b-427c-bab3-963cb4744d66")
+			(uuid "876374a0-18da-4cb9-92c6-52942f961577")
 		)
 		(pin "4"
-			(uuid "e919ada4-5ef9-4790-ae63-31c873efb896")
+			(uuid "16a2abb7-2b76-41b4-8eae-4a104b8e8d46")
 		)
 		(pin "3"
-			(uuid "6740dda2-eb21-4ffb-8d44-09318775252d")
+			(uuid "acc42e69-452f-4415-b1e3-7b88484944e7")
 		)
 		(pin "1"
-			(uuid "04975504-e5e2-4c1c-9bed-52e7d957ff55")
+			(uuid "cc94c2be-0b00-4fd5-8199-d67fee9be11b")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D207")
 					(unit 1)
 				)
@@ -5548,11 +5548,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b63cdde-5c32-4c51-8a9e-8ddf6a91cf0c")
+			(uuid "af7d63e4-29b5-4d06-9fc0-e66f5797a8a0")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "#PWR0242")
 					(unit 1)
 				)
@@ -5624,20 +5624,20 @@
 			)
 		)
 		(pin "2"
-			(uuid "20cffc79-cc59-4bd2-a78c-d5df96e53030")
+			(uuid "33ba0722-0137-4c44-9ec2-288f1db94adf")
 		)
 		(pin "4"
-			(uuid "6a396ebd-0f8e-4c45-8f9d-693cd53de755")
+			(uuid "0183e1bc-c98d-4b66-a078-1bffef0c6ca4")
 		)
 		(pin "3"
-			(uuid "cc3bfd0e-6172-4975-afc3-e101c5d2319c")
+			(uuid "3a356486-c5c4-4df6-9b33-8039c474fd51")
 		)
 		(pin "1"
-			(uuid "4356a8f7-5368-4d45-861a-fa733852f606")
+			(uuid "458e38f1-e4d3-46d4-98eb-8d70bbcbb339")
 		)
 		(instances
 			(project "Auckland-LED-Train-Map"
-				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/92ce81e1-4cc3-49ef-ad06-c735ef324c34/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45/081abeee-8e28-48da-a70f-ee01407c3b3b/2bdc9a9d-cd00-4f56-a25d-ca3212db160a/7ea0119b-7e3e-4b22-b10c-5193e6e42080/6bdd3fec-8e69-4213-b97d-b714dd907def"
 					(reference "D203")
 					(unit 1)
 				)
