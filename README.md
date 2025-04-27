@@ -1,6 +1,6 @@
 # Auckland Live LED Train Map
 
-![PCB Overview Render](Images\Auckland-LED-Train-Map-Render.avif) A project to create a physical map of the Auckland train network where train movements are displayed in real-time using individually addressable LEDs. The map is controlled by an ESP32-C3 microcontroller, fetching live data over Wi-Fi.
+![PCB Overview Render](Images/Auckland-LED-Train-Map-Render.avif) A project to create a physical map of the Auckland train network where train movements are displayed in real-time using individually addressable LEDs. The map is controlled by an ESP32-C3 microcontroller, fetching live data over Wi-Fi.
 
 ## Features
 
@@ -10,7 +10,7 @@
 * **Custom PCB:** Designed specifically for this project, fitting within common PCB manufacturer limits (JLCPCB).
 * **Open Source:** Hardware design files and (eventually) firmware are open source.
 
-![ESP32-C3 PCB Render](Images\ESP32C3-PCB-Render.avif)
+![ESP32-C3 PCB Render](Images/ESP32C3-PCB-Render.avif)
 
 ## Hardware
 
@@ -27,7 +27,7 @@ The core components of the map include:
   * **Manufacturer Friendly:** Designed to fit within JLCPCB's standard 250mm x 250mm maximum size.
 * **Antenna:** On-board PCB antenna based on the [Texas Instruments CC2430DB Demo Board design (SWCU125)](https://www.ti.com/lit/ug/swru125/swru125.pdf).
 
-![Images\Pukekohe-PCB-Render.avif](Images\ESP32C3-PCB-Render.avif)
+![Images\Pukekohe-PCB-Render.avif](Images/ESP32C3-PCB-Render.avif)
 
 ## PCB Design
 
