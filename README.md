@@ -37,6 +37,8 @@ The Printed Circuit Board (PCB) was designed using KiCad V9.0 and utilizes my cu
     [https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FCDFER%2FAuckland-LED-Train-Map%2Ftree%2FV1-PCB%2FPCB](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FCDFER%2FAuckland-LED-Train-Map%2Ftree%2FV1-PCB%2FPCB)
 * **Source Files:** The KiCad project files (schematic, PCB layout) can be found in the `/PCB` directory of this repository.
 
+![Schematic](Images/Schematic.avif)
+
 ## Software / Firmware
 
 *(This section is a placeholder - details about the specific firmware, data source, setup instructions, and required libraries will be added here when it is completed.)*
