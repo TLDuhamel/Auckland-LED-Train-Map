@@ -4,6 +4,14 @@
 	(generator_version "9.0")
 	(uuid "672994de-f8f2-44fa-913e-8891b0bb032a")
 	(paper "A4")
+	(title_block
+		(title "Auckland Train Network Live Map")
+		(date "2025-04-26")
+		(rev "1")
+		(company "Kea Studios")
+		(comment 1 "©Chris Dirks")
+		(comment 2 "MIT License")
+	)
 	(lib_symbols
 		(symbol "PCM_JLCPCB-Capacitors:0402,10uF"
 			(pin_numbers
