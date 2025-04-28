@@ -12416,12 +12416,6 @@
 		(uuid "0f7e0ef8-b69b-4a75-b1e8-2721d6b4ec71")
 	)
 	(junction
-		(at 215.9 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "105d8501-dbfc-4893-94e6-39836450829e")
-	)
-	(junction
 		(at 271.78 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12446,22 +12440,10 @@
 		(uuid "14c4f71a-bf03-4edb-bb73-1fabb269300d")
 	)
 	(junction
-		(at 215.9 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ccedd82-dd0f-420b-9576-ec8a41eefb15")
-	)
-	(junction
 		(at 99.06 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2066ce24-3989-4940-b358-3d1c2967fedb")
-	)
-	(junction
-		(at 198.12 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "223aaa23-ed45-4f4e-95dc-ac00b8eaab6f")
 	)
 	(junction
 		(at 190.5 91.44)
@@ -12512,12 +12494,6 @@
 		(uuid "3de83774-dd3d-47f6-bb18-45d8d5a6513f")
 	)
 	(junction
-		(at 215.9 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40dae80f-a8a0-49c9-877f-730c12d3ef88")
-	)
-	(junction
 		(at 241.3 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12554,10 +12530,10 @@
 		(uuid "5a006466-7405-4058-bf77-41938cc5aa44")
 	)
 	(junction
-		(at 215.9 137.16)
+		(at 195.58 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5a830065-cc82-4789-aadc-0066df2d77a1")
+		(uuid "5fe7cf36-c5ca-40f0-88f8-af6a71200c84")
 	)
 	(junction
 		(at 226.06 27.94)
@@ -12626,12 +12602,6 @@
 		(uuid "81daae51-1305-425a-be64-c429b2369c29")
 	)
 	(junction
-		(at 215.9 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8252ea46-d178-4628-8c0d-022b2dc45d33")
-	)
-	(junction
 		(at 129.54 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12698,12 +12668,6 @@
 		(uuid "c7eab5de-6226-4068-bb32-996dba1deb76")
 	)
 	(junction
-		(at 215.9 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d008d3c3-baa7-41e9-9a2d-16dd4b7c1fec")
-	)
-	(junction
 		(at 215.9 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12768,8 +12732,20 @@
 		(uuid "3273a3f5-e91a-4f61-903a-1f9fa0577fb5")
 	)
 	(no_connect
+		(at 215.9 142.24)
+		(uuid "48f372e3-95b3-40a2-9991-b12250e072cb")
+	)
+	(no_connect
+		(at 215.9 134.62)
+		(uuid "48f7fdcd-6040-40b8-9034-7b1f38322bc7")
+	)
+	(no_connect
 		(at 251.46 76.2)
 		(uuid "495ce7a7-5414-4939-9d9f-cd20b5c01994")
+	)
+	(no_connect
+		(at 215.9 139.7)
+		(uuid "547a6d36-e185-41d4-98c2-dc773ad4b3a7")
 	)
 	(no_connect
 		(at 40.64 93.98)
@@ -12780,12 +12756,20 @@
 		(uuid "7b5691e7-dad0-4221-b4ee-9fabe39ecd1d")
 	)
 	(no_connect
+		(at 215.9 147.32)
+		(uuid "84aed891-f0c1-4991-b8df-8da5be452149")
+	)
+	(no_connect
 		(at 40.64 96.52)
 		(uuid "9e8d67c9-e06d-437b-a940-f11c7a076348")
 	)
 	(no_connect
 		(at 251.46 81.28)
 		(uuid "a9b2618c-6725-4b04-b055-b2d9f4ac1b69")
+	)
+	(no_connect
+		(at 215.9 137.16)
+		(uuid "abdf6ee0-2723-46b1-baaa-9c0def32f6b4")
 	)
 	(no_connect
 		(at 40.64 106.68)
@@ -12800,6 +12784,10 @@
 		(uuid "d85f8002-755d-4c1a-878a-67bd7a91c84f")
 	)
 	(no_connect
+		(at 215.9 144.78)
+		(uuid "da3d2882-5edd-4a66-a879-9e06f1115d54")
+	)
+	(no_connect
 		(at 40.64 99.06)
 		(uuid "f9d91d87-52a7-4e44-a60e-39ad205995fb")
 	)
@@ -12809,7 +12797,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 152.4) (xy 200.66 152.4)
+			(xy 187.96 152.4) (xy 200.66 152.4)
 		)
 		(stroke
 			(width 0)
@@ -12969,16 +12957,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 144.78) (xy 215.9 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "176741d7-8082-4321-bd93-987720b3accb")
-	)
-	(wire
-		(pts
 			(xy 177.8 43.18) (xy 205.74 43.18)
 		)
 		(stroke
@@ -13056,16 +13034,6 @@
 			(type default)
 		)
 		(uuid "2768f283-228a-4424-813c-0b0bdb9d5bae")
-	)
-	(wire
-		(pts
-			(xy 215.9 147.32) (xy 215.9 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "287778c2-8087-4a81-b715-782f06c0c219")
 	)
 	(wire
 		(pts
@@ -13229,16 +13197,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 142.24) (xy 215.9 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "476a2755-73b7-4506-9b58-3901f923233a")
-	)
-	(wire
-		(pts
 			(xy 242.57 27.94) (xy 250.19 27.94)
 		)
 		(stroke
@@ -13369,16 +13327,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 137.16) (xy 215.9 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e28764c-f0b5-47c0-9900-080cc81666d9")
-	)
-	(wire
-		(pts
 			(xy 152.4 76.2) (xy 205.74 76.2)
 		)
 		(stroke
@@ -13459,13 +13407,13 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 142.24) (xy 203.2 142.24)
+			(xy 195.58 137.16) (xy 203.2 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f0792df-7027-4297-b1e3-f3715b600e31")
+		(uuid "75148787-2b2b-4ec3-a6ff-7009c1d86205")
 	)
 	(wire
 		(pts
@@ -13849,16 +13797,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 134.62) (xy 215.9 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4d475da-28ba-4f0d-bc65-1f6701c0cd04")
-	)
-	(wire
-		(pts
 			(xy 250.19 27.94) (xy 259.08 27.94)
 		)
 		(stroke
@@ -13909,7 +13847,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 142.24) (xy 210.82 129.54)
+			(xy 210.82 137.16) (xy 210.82 129.54)
 		)
 		(stroke
 			(width 0)
@@ -13919,7 +13857,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 142.24) (xy 198.12 142.24)
+			(xy 190.5 137.16) (xy 195.58 137.16)
 		)
 		(stroke
 			(width 0)
@@ -14016,16 +13954,6 @@
 			(type default)
 		)
 		(uuid "d874684b-0d18-463b-94c2-a12623143ff2")
-	)
-	(wire
-		(pts
-			(xy 215.9 139.7) (xy 215.9 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8a42e27-877c-46be-85a1-4869d470e962")
 	)
 	(wire
 		(pts
@@ -14659,7 +14587,7 @@
 	)
 	(global_label "STRAND-MNK-1"
 		(shape input)
-		(at 193.04 142.24 180)
+		(at 190.5 137.16 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14669,7 +14597,7 @@
 		)
 		(uuid "753c74be-8be3-4629-99b4-0f6dcc7a62f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 174.5124 142.24 0)
+			(at 171.9724 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14681,7 +14609,7 @@
 	)
 	(global_label "NAL-NIMT-1"
 		(shape input)
-		(at 195.58 152.4 180)
+		(at 187.96 152.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14691,7 +14619,7 @@
 		)
 		(uuid "e262bb36-2d8d-4b53-b6b5-f28b5de75c9d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.439 152.4 0)
+			(at 172.819 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18542,7 +18470,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c24996a-e461-46bd-96ad-e1ccce6afb13")
 		(property "Reference" "TP3"
-			(at 202.057 147.8858 0)
+			(at 202.057 149.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18557,6 +18485,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Custom_Footprints:TestPoint_Pad_D1.0mm"
@@ -19163,6 +19092,229 @@
 			(project ""
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
 					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0402,100kΩ")
+		(at 195.58 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f66d2a7-a905-4d20-b8ae-cb33a5fefeb8")
+		(property "Reference" "R25"
+			(at 197.358 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 195.58 140.97 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at 193.802 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1003TCE_C25741.pdf"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 100kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "6150463"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "100kΩ"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "0402WGF1003TCE"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "301d17fe-5451-4fa9-86eb-7c53a76b7555")
+		)
+		(pin "1"
+			(uuid "b22f2c3f-155c-4de0-b5db-26c10e4c1c53")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -26409,7 +26561,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,100Ω")
-		(at 207.01 142.24 90)
+		(at 207.01 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26418,7 +26570,7 @@
 		(fields_autoplaced yes)
 		(uuid "9c72b705-a429-4075-a105-1511a42c0826")
 		(property "Reference" "R15"
-			(at 207.01 139.5039 90)
+			(at 207.01 134.4239 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26426,7 +26578,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 207.01 142.24 90)
+			(at 207.01 137.16 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -26435,7 +26587,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 207.01 144.018 90)
+			(at 207.01 138.938 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26444,7 +26596,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF1000TCE_C25076.pdf"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26453,7 +26605,7 @@
 			)
 		)
 		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 100Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26462,7 +26614,7 @@
 			)
 		)
 		(property "LCSC" "C25076"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26471,7 +26623,7 @@
 			)
 		)
 		(property "Stock" "3549339"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26480,7 +26632,7 @@
 			)
 		)
 		(property "Price" "0.004USD"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26489,7 +26641,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26498,7 +26650,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26507,7 +26659,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26516,7 +26668,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26525,7 +26677,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26534,7 +26686,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26543,7 +26695,7 @@
 			)
 		)
 		(property "Part" "0402WGF1000TCE"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26552,7 +26704,7 @@
 			)
 		)
 		(property "Resistance" "100Ω"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26561,7 +26713,7 @@
 			)
 		)
 		(property "Power(Watts)" "62.5mW"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26570,7 +26722,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26579,7 +26731,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "50V"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26588,7 +26740,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26597,7 +26749,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26606,7 +26758,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 207.01 142.24 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32533,6 +32685,229 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0402,100kΩ")
+		(at 200.66 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d36d021b-e9ad-488d-b321-65f16d61eabc")
+		(property "Reference" "R24"
+			(at 202.438 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 200.66 156.21 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at 198.882 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1003TCE_C25741.pdf"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 100kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "6150463"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "100kΩ"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "0402WGF1003TCE"
+			(at 200.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e91f8da-101d-4aef-a0e4-cb253a8af5fe")
+		)
+		(pin "1"
+			(uuid "a1b03d47-8715-41d2-b35d-6b338fcbe4ea")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Extended:Connector, USB-TYPE-C-16P")
 		(at 25.4 43.18 0)
 		(unit 1)
@@ -32993,6 +33368,72 @@
 			(project ""
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc13181f-b8b8-42b7-aa21-1123e958dd51")
+		(property "Reference" "#PWR0386"
+			(at 195.58 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.58 148.9131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36e3b3aa-73d4-45bf-ac4e-9a1829d46400")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
+					(reference "#PWR0386")
 					(unit 1)
 				)
 			)
@@ -34072,7 +34513,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 198.12 142.24 0)
+		(at 195.58 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34081,7 +34522,7 @@
 		(fields_autoplaced yes)
 		(uuid "eafc50b8-7b75-4a32-ade4-cf55d52b09d9")
 		(property "Reference" "TP9"
-			(at 199.517 137.7258 0)
+			(at 196.977 133.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34090,16 +34531,17 @@
 			)
 		)
 		(property "Value" "STRAND-MNK_LED"
-			(at 199.517 140.1501 0)
+			(at 187.96 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Custom_Footprints:TestPoint_Pad_D1.0mm"
-			(at 203.2 142.24 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34108,7 +34550,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 142.24 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34117,7 +34559,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 198.12 142.24 0)
+			(at 195.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34332,6 +34774,72 @@
 			(project "Auckland-LED-Train-Map"
 				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
 					(reference "#PWR0377")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed1ed447-a9ea-4a5b-a44f-a32838a8c9e4")
+		(property "Reference" "#PWR0383"
+			(at 200.66 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 164.1531 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01bbce25-a7d9-4856-b4be-469860df16ec")
+		)
+		(instances
+			(project "Auckland-LED-Train-Map"
+				(path "/ab288f7d-a01b-40d1-8b79-fa22fb371f45"
+					(reference "#PWR0383")
 					(unit 1)
 				)
 			)
@@ -36606,7 +37114,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 149.86)
+		(at 170.18 149.86)
 		(size 20.32 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36621,7 +37129,7 @@
 		)
 		(uuid "081abeee-8e28-48da-a70f-ee01407c3b3b")
 		(property "Sheetname" "NAL-NIMT-1"
-			(at 177.8 149.1484 0)
+			(at 170.18 149.1484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36630,7 +37138,7 @@
 			)
 		)
 		(property "Sheetfile" "NAL-NIMT-1.kicad_sch"
-			(at 177.8 155.5246 0)
+			(at 170.18 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36647,7 +37155,7 @@
 		)
 	)
 	(sheet
-		(at 172.72 139.7)
+		(at 170.18 134.62)
 		(size 22.86 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36663,7 +37171,7 @@
 		)
 		(uuid "dbd0708e-69d8-4d43-bcc7-3988563b469e")
 		(property "Sheetname" "STRAND-MNK-1"
-			(at 172.72 138.9884 0)
+			(at 170.18 133.9084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36672,7 +37180,7 @@
 			)
 		)
 		(property "Sheetfile" "STRAND-MNK-1.kicad_sch"
-			(at 172.72 145.3646 0)
+			(at 170.18 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)

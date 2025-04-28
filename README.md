@@ -34,7 +34,7 @@ The core components of the map include:
 The Printed Circuit Board (PCB) was designed using KiCad V9.0 and utilizes my custom [JLCPCB KiCad Library](https://github.com/CDFER/jlcpcb-kicad-library)
 
 * **View Online:** You can view the PCB layout interactively using the Kicanvas web viewer:
-    [https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FCDFER%2FAuckland-LED-Train-Map%2Ftree%2FV1-PCB%2FPCB](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FCDFER%2FAuckland-LED-Train-Map%2Ftree%2FV1-PCB%2FPCB)
+    [https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FCDFER%2FAuckland-LED-Train-Map%2Ftree%2Fmain%2FPCB](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FCDFER%2FAuckland-LED-Train-Map%2Ftree%2Fmain%2FPCB)
 * **Source Files:** The KiCad project files (schematic, PCB layout) can be found in the `/PCB` directory of this repository.
 
 ![Schematic](Images/Schematic.avif)
