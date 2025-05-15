@@ -32464,7 +32464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:TSSOP-24_L7.8-W4.4-P0.65-LS6.4-BL"
+		(property "Footprint" "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
 			(at 228.6 149.86 0)
 			(effects
 				(font
