@@ -1,5 +1,5 @@
 Default	False	2.0	3
 2.5A	False	2.0	3
 50Ohm	False	2.0	3
-90Ohm	True	3.0	3
+90Ohm	True	0.5	5
 False	True	True
