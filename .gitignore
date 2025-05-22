@@ -28,3 +28,31 @@ fp-info-cache
 
 # Exclude JLCPCB production outputs
 PCB/jlcpcb/
+
+#platformio
+*.pioenvs
+*.piolibdeps
+*.clang_complete
+*.gcc-flags.json
+*.pio
+*credentials.h
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+*launch.json
+*c_cpp_properties.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Password files
+*passwords*
+*secrets*
+!*secrets-blank*
+*env*
