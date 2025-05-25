@@ -1,3 +1,11 @@
 // Rename to secrets.h for the code to use your WiFi Network
-const char* ssid = "SSID";
-const char* password = "12345678";
+struct wifiNetwork {
+	const char* ssid;
+	const char* password;
+};
+
+wifiNetwork wifiNetworks[] = {
+	{ "SSID1", "password1" },
+	{ "SSID2", "password2" },
+	{ "SSID3", "password3" },
+};
