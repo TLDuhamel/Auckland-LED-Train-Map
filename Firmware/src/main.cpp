@@ -5,6 +5,9 @@
 #include <NeoPixelBusLg.h>
 #include <WiFi.h>
 #include <WiFiMulti.h>
+#include <esp_sntp.h>
+#include <time.h>  // Required for time_t
+#include <vector>  // Required for std::vector
 
 #include "secrets.h"
 
@@ -12,11 +15,18 @@ WiFiMulti wifiMulti;
 
 // Array of server URLs for failover
 const char* serverURLs[] = {
-	"http://170.64.133.152:3000/ledmap100.json",
+	"http://keastudios.co.nz/ledmap100.json",
 	"http://192.168.86.31:3000/ledmap100.json",
 };
 const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
 int currentServerIndex = 0;
+
+const char* ntpServers[] = { "nz.pool.ntp.org", "pool.msltime.measurement.govt.nz", "pool.ntp.org" };
+
+const char* time_zone = "NZST-12NZDT,M9.5.0,M4.1.0/3";
+
+time_t lastMapDrawTime = 0;	 // Tracks the last time the map was drawn
+time_t nextFetchTime = 0;	 // Tracks when the next update should occur
 
 // Pins and pixel counts defined in the board file (./boards/Auckland_Rail_Network_V1_0_0.json)
 
@@ -24,6 +34,18 @@ NeoPixelBusLg<NeoGrbFeature, NeoEsp32Rmt0800KbpsMethod> strandMNK(STRAND_MNK_PIX
 NeoPixelBusLg<NeoGrbFeature, NeoEsp32Rmt1800KbpsMethod> nalNIMT(NAL_NIMT_PIXELS, NAL_NIMT);
 
 RgbColor black(0, 0, 0);
+std::vector<RgbColor> colorTable;
+int blockColorIds[512];	 // Array to hold block colors
+
+// --- Data structure for scheduled LED updates ---
+struct LedUpdate {
+	uint16_t preBlock;
+	uint16_t postBlock;
+	int colorId;
+	time_t timestamp;  // Timestamp for when the update should occur
+};
+
+std::vector<LedUpdate> ledUpdateSchedule;
 
 enum statusLedCommand {
 	LED_OFF,
@@ -47,9 +69,8 @@ typedef struct {
 TaskHandle_t statusLedTaskHandle;
 
 static unsigned long lastUpdate = 0;
-int16_t brightness = 20;
-String jsonInput = String();
-bool brightnessChanged = false;
+int16_t brightness = 40;
+bool ledUpdatePending = false;
 
 struct Button {
 	uint8_t pin;
@@ -63,7 +84,8 @@ Button brightnessDownButton = { BRIGHTNESS_DOWN_BUTTON, 0, false, HIGH };
 Button brightnessUpButton = { BRIGHTNESS_UP_BUTTON, 0, false, HIGH };
 Button powerButton = { POWER_BUTTON, 0, false, HIGH };
 
-// IRAM_ATTR ensures the ISR is placed in IRAM (critical for ESP32)
+// --- (Existing ISR, button check, time, and LED functions) ---
+// IRAM_ATTR ensures the ISR is placed in IRAM
 void IRAM_ATTR buttonISR(void* arg) {
 	Button* button = (Button*)arg;
 	button->lastChangeTime = xTaskGetTickCountFromISR() * portTICK_PERIOD_MS;
@@ -76,33 +98,48 @@ void checkButton(Button* button) {
 		if (currentState != button->lastState) {
 			button->lastState = currentState;
 			if (currentState == LOW) {	// Assuming active-low configuration
-				uint8_t oldBrightness = brightness;
 				// Handle button press
 				switch (button->pin) {
 					case BRIGHTNESS_DOWN_BUTTON:
-						Serial.print("Brightness Down pressed");
+						Serial.print("Brightness Down pressed ");
 						brightness -= 20;
 						break;
 					case BRIGHTNESS_UP_BUTTON:
-						Serial.print("Brightness Up pressed");
+						Serial.print("Brightness Up pressed ");
 						brightness += 20;
 						break;
 					case POWER_BUTTON:
-						Serial.print("Power button pressed");
+						Serial.print("Power button pressed ");
 						brightness = (brightness == 0) ? 250 : 0;  // Toggle brightness
 						break;
+					default:
+						Serial.printf("Unknown button pressed on pin %d\n", button->pin);
+						return;	 // Exit if an unknown button is pressed
 				}
 				// Ensure brightness stays within bounds
 				brightness = (brightness > 0) ? constrain(brightness, 20, 250) : 0;
 				strandMNK.SetLuminance(brightness);
 				nalNIMT.SetLuminance(brightness);
-				Serial.printf(" brightness: %i/255\n", brightness);
-
-				brightnessChanged = (oldBrightness != brightness);
+				Serial.printf("brightness now at: %i/255\n", brightness);
+				ledUpdatePending = true;
 			}
 		}
 		button->pendingCheck = false;
 	}
+}
+
+const char* getLocalTime() {
+	struct tm timeinfo;
+	static char buffer[64];	 // Buffer for formatted time string
+	if (!getLocalTime(&timeinfo)) {
+		return "No time available";
+	}
+	return strftime(buffer, sizeof(buffer), "%Y/%m/%d %H:%M:%S", &timeinfo) ? buffer : "Format error";
+}
+
+void timeavailable(struct timeval* t) {
+	Serial.println("Got time adjustment from NTP!");
+	Serial.println(getLocalTime());
 }
 
 void setCharlieplexedLED(uint8_t pin, charlieplexedLedState state) {
@@ -124,7 +161,7 @@ void setCharlieplexedLED(uint8_t pin, charlieplexedLedState state) {
 	}
 }
 
-// LED Task function
+// Task to manage status LEDs
 void statusLedManagerTask(void* pvParameters) {
 	statusLed leds[] = { { WIFI_LED_PIN, LED_OFF, false, 0 }, { CONFIG_LED_PIN, LED_OFF, false, 0 } };
 	const int numLeds = sizeof(leds) / sizeof(leds[0]);
@@ -174,7 +211,6 @@ void statusLedManagerTask(void* pvParameters) {
 	}
 }
 
-// Replace all setCharlieplexedLED() calls with notifications:
 void setStatusLedState(uint8_t pin, statusLedCommand command) {
 	uint32_t notification = (pin << 24) | (command << 16);
 	xTaskNotify(statusLedTaskHandle, notification, eSetValueWithOverwrite);
@@ -227,7 +263,8 @@ String downloadJSON() {
 	for (int i = 0; i < numServers; i++) {
 		int serverIndex = (currentServerIndex + i) % numServers;
 		const char* url = serverURLs[serverIndex];
-		http.setTimeout(500);  // Set timeout to 500ms seconds per server
+		http.setTimeout(1000);	// Set timeout to 1 second per server
+		http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
 		http.begin(url);
 
 		int httpCode = http.GET();
@@ -244,72 +281,98 @@ String downloadJSON() {
 	return String();
 }
 
-RgbColor hexStringToRgbColor(const char* hexStr) {
-	if (!hexStr || strlen(hexStr) < 3)
-		return RgbColor(0, 0, 0);
-
-	// Skip '#' if present
-	const char* start = hexStr;
-	if (hexStr[0] == '#')
-		start++;
-
-	// Convert to 32-bit RGB value
-	uint32_t rgb = strtoul(start, NULL, 16);
-
-	// Handle shorthand 3-digit format
-	if (strlen(start) == 3) {
-		return RgbColor(((rgb >> 8) & 0xF) * 0x11,	// Expand 4-bit to 8-bit
-						((rgb >> 4) & 0xF) * 0x11,
-						(rgb & 0xF) * 0x11);
+void setBlockColor(uint16_t block, int colorId) {
+	if (blockColorIds[block] < colorId) {
+		blockColorIds[block] = colorId; // Update the color ID for the block if it's higher
 	}
 
-	// Standard 6-digit format
-	return RgbColor((rgb >> 16) & 0xFF,	 // Red component
-					(rgb >> 8) & 0xFF,	 // Green component
-					rgb & 0xFF			 // Blue component
-	);
+	// Set the color on the appropriate strand based on the block number
+	if (block >= 100 && block <= 207) {
+		nalNIMT.SetPixelColor(block - 100, colorTable[blockColorIds[block]]);
+	} else if (block >= 300 && block <= 343) {
+		strandMNK.SetPixelColor(block - 300, colorTable[blockColorIds[block]]);
+	} else {
+		Serial.printf("Block %d is out of range for both strands.\n", block);
+	}
 }
 
-void parseLEDMap(const String& jsonInput) {
+void drawMap() {
+	// Clear both strands
+	nalNIMT.ClearTo(black);
+	strandMNK.ClearTo(black);
+	// Reset the blocks array
+	for (int i = 0; i < 512; i++) {
+		blockColorIds[i] = 0;  // Reset all blocks to black
+	}
+
+	// Draw the map based on the current LED update schedule
+	time_t epoch = time(nullptr);
+	for (const auto& update : ledUpdateSchedule) {
+		if (epoch >= update.timestamp) {
+			setBlockColor(update.postBlock, update.colorId);
+		} else {
+			setBlockColor(update.preBlock, update.colorId);
+		}
+	}
+
+	// Show the updates on both strands
+	nalNIMT.Show();
+	strandMNK.Show();
+
+	lastMapDrawTime = epoch;  // Update the last draw time
+}
+
+void parseLEDMap(const String& downloadedJson) {
 	JsonDocument doc;
-	DeserializationError error = deserializeJson(doc, jsonInput);
+	DeserializationError error = deserializeJson(doc, downloadedJson);
 
 	if (error) {
 		Serial.printf("JSON parse error: %s\n", error.c_str());
 		return;
 	}
 
-	// Parse version
-	const char* version = doc["version"];
+	ledUpdateSchedule.clear();
 
-	// Parse line colors
-	JsonObject colors = doc["lineColors"];
+	String version = doc["version"] | "";
+	time_t baseTimestamp = doc["timestamp"] | 0;
+	int updateOffset = doc["update"] | 0;
+	JsonObject colors = doc["colors"];
+	JsonArray updates = doc["updates"];
 
-	// Parse busses
-	JsonArray busses = doc["busses"];
-	for (JsonObject bus : busses) {
-		String busId = bus["busId"];
-		JsonObject leds = bus["leds"];
-		for (JsonPair led : leds) {
-			int ledIndex = atoi(led.key().c_str());
-			int colorId = led.value().as<int>();
-
-			// Get color from line_colors
-			char colorKey[4];
-			snprintf(colorKey, sizeof(colorKey), "%d", colorId);
-			const char* hexColor = colors[colorKey];
-			RgbColor pixelColor = hexStringToRgbColor(hexColor);
-			// pixelColor = pixelColor.Dim(uint8_t(brightness));
-
-			if (busId == "STRAND_MNK") {
-				strandMNK.SetPixelColor(ledIndex, pixelColor);
-			} else if (busId == "NAL_NIMT") {
-				nalNIMT.SetPixelColor(ledIndex, pixelColor);
-			} else {
-				Serial.printf("Unknown bus ID: %s\n", busId);
-			}
-		}
+	if (baseTimestamp + updateOffset > nextFetchTime) {
+		nextFetchTime = baseTimestamp + updateOffset;
 	}
+
+	Serial.printf("%ld Base timestamp: %ld, Update offset: %d, Next fetch time: %ld\n",
+				  time(nullptr),
+				  baseTimestamp,
+				  updateOffset,
+				  nextFetchTime);
+
+	// Populate colorTable from the JSON colors object
+	colorTable.clear();
+	for (JsonPair kv : colors) {
+		JsonArray rgb = kv.value().as<JsonArray>();
+		colorTable.push_back(RgbColor(rgb[0] | 0, rgb[1] | 0, rgb[2] | 0));
+	}
+
+	for (JsonObject update : updates) {
+		JsonArray blocks = update["b"];
+		int colorId = update["c"];
+		int offset = update["t"];
+
+		// Schedule color update
+		LedUpdate ledUpdate;
+		ledUpdate.preBlock = blocks[0];
+		ledUpdate.postBlock = blocks[1];
+		ledUpdate.timestamp = baseTimestamp + offset;
+		ledUpdate.colorId = colorId;
+		ledUpdateSchedule.push_back(ledUpdate);
+	}
+
+	ledUpdatePending = true;  // Mark that an update is pending
+
+	Serial.printf("Parsed %d LED updates from JSON input. Version: %s\n", ledUpdateSchedule.size(), version.c_str());
 }
 
 void setup() {
@@ -355,6 +418,10 @@ void setup() {
 
 	Serial.println(getSystemInfo());
 
+	// --- Time Setup ---
+	sntp_set_time_sync_notification_cb(timeavailable);
+	configTzTime(time_zone, ntpServers[0], ntpServers[1], ntpServers[2]);
+
 	// --- WiFi Setup ---
 	setStatusLedState(WIFI_LED_PIN, LED_BLINK_GREEN_FAST);
 	WiFi.mode(WIFI_STA);
@@ -385,44 +452,57 @@ void setup() {
 
 void loop() {
 	if (WiFi.status() == WL_CONNECTED) {
+		time_t epoch = time(nullptr);  // Get current time
 
-		if (millis() - lastUpdate >= 6000) {
-			lastUpdate = millis();
+		// --- Fetch new data periodically ---
+		if (epoch > nextFetchTime) {
+			nextFetchTime = epoch + 6;	// Set next update time to at least 6s from now
 
-			jsonInput = downloadJSON();
-			if (jsonInput.length() > 0) {
+			String downloadedJson = downloadJSON();
+			if (downloadedJson.length() > 0) {
 				setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN);
-
-				strandMNK.ClearTo(black);
-				nalNIMT.ClearTo(black);
-				parseLEDMap(jsonInput);
-				strandMNK.Show();
-				nalNIMT.Show();
-
+				parseLEDMap(downloadedJson);  // This populates/updates the schedule
+				Serial.printf("Update @ %ld. %ld seconds from now...\n", nextFetchTime, nextFetchTime - time(nullptr));
 			} else {
-				Serial.println("All servers failed");
+				Serial.println("All servers failed to provide data.");
 				setStatusLedState(WIFI_LED_PIN, LED_BLINK_RED_SLOW);
 			}
-
-			Serial.printf("MCU:%2.1f°C  WiFi:%idBm\n", temperatureRead(), WiFi.RSSI());
+			Serial.printf("%s MCU:%2.1f°C  WiFi:%idBm\n\n", getLocalTime(), temperatureRead(), WiFi.RSSI());
 		}
 
-		// Check button states
+		// --- Process the LED update schedule ---
+		// int ledUpdatesCount = 0;
+
+		// Iterate through the schedule to find updates that are due
+		// auto update = ledUpdateSchedule.begin();
+		// while (update != ledUpdateSchedule.end()) {
+		// 	if (epoch >= update->timestamp) {
+		// 		ledUpdatesCount++;
+		// 		setBlockColor(update->block, update->color);  // Set the color for the block
+		// 		update = ledUpdateSchedule.erase(update);
+		// 	} else {
+		// 		++update;
+		// 	}
+		// }
+
+		// if (ledUpdatesCount > 0)
+		// 	Serial.printf("Processed %i LED updates from schedule.\n", ledUpdatesCount);
+
+		// --- Handle button presses ---
 		checkButton(&brightnessDownButton);
 		checkButton(&brightnessUpButton);
 		checkButton(&powerButton);
 
-		if (brightnessChanged) {
-			brightnessChanged = false;
-			parseLEDMap(jsonInput);
-			strandMNK.Show();
-			nalNIMT.Show();
+		// --- Push updates to the LED strips only if changes were made ---
+		if (ledUpdatePending || lastMapDrawTime < epoch) {
+			drawMap();	// Draw the map with the current updates
+			ledUpdatePending = false;
 		}
 
 	} else {
-		wifiMulti.run(6000);  // Attempt to reconnect if WiFi is disconnected
 		Serial.println("WiFi disconnected, attempting to reconnect...");
 		setStatusLedState(WIFI_LED_PIN, LED_ON_RED);
+		wifiMulti.run(30 * 1000);  // Attempt to reconnect
 	}
-	vTaskDelay(pdMS_TO_TICKS(100));
+	vTaskDelay(pdMS_TO_TICKS(10));	// Delay to yield to other tasks
 }

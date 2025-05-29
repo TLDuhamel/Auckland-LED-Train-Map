@@ -1,12 +1,21 @@
 {
     "cSpell.words": [
+        "ARDUHAL",
         "bblanchon",
         "Charlieplexed",
+        "DCONFIG",
+        "DCORE",
         "espressif",
+        "HTTPC",
         "IRAM",
+        "Kbps",
         "makuna",
+        "msltime",
         "NIMT",
+        "NZDT",
+        "NZST",
         "QOUT",
-        "RSSI"
+        "RSSI",
+        "sntp"
     ]
 }
