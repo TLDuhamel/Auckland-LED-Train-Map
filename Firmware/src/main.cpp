@@ -161,7 +161,6 @@ void setCharlieplexedLED(uint8_t pin, charlieplexedLedState state) {
 	}
 }
 
-// Task to manage status LEDs
 void statusLedManagerTask(void* pvParameters) {
 	statusLed leds[] = { { WIFI_LED_PIN, LED_OFF, false, 0 }, { CONFIG_LED_PIN, LED_OFF, false, 0 } };
 	const int numLeds = sizeof(leds) / sizeof(leds[0]);
@@ -263,7 +262,7 @@ String downloadJSON() {
 	for (int i = 0; i < numServers; i++) {
 		int serverIndex = (currentServerIndex + i) % numServers;
 		const char* url = serverURLs[serverIndex];
-		http.setTimeout(1000);	// Set timeout to 1 second per server
+		http.setTimeout(10000);	 // Set timeout to 10 seconds per server
 		http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
 		http.begin(url);
 
@@ -283,7 +282,7 @@ String downloadJSON() {
 
 void setBlockColor(uint16_t block, int colorId) {
 	if (blockColorIds[block] < colorId) {
-		blockColorIds[block] = colorId; // Update the color ID for the block if it's higher
+		blockColorIds[block] = colorId;	 // Update the color ID for the block if it's higher
 	}
 
 	// Set the color on the appropriate strand based on the block number
@@ -425,6 +424,7 @@ void setup() {
 	// --- WiFi Setup ---
 	setStatusLedState(WIFI_LED_PIN, LED_BLINK_GREEN_FAST);
 	WiFi.mode(WIFI_STA);
+	WiFi.setTxPower(WIFI_POWER_15dBm);	// Set WiFi power to avoid brownouts
 	const int numWiFiNetworks = sizeof(wifiNetworks) / sizeof(wifiNetworks[0]);
 	for (int i = 0; i < numWiFiNetworks; i++) {
 		wifiMulti.addAP(wifiNetworks[i].ssid, wifiNetworks[i].password);
@@ -434,7 +434,7 @@ void setup() {
 	Serial.print("Connecting to WiFi ");
 	uint16_t wifi_retries = 0;
 	// Use WiFiMulti's run() to handle connection attempts
-	while (wifiMulti.run(5 * 1000) != WL_CONNECTED && wifi_retries < 6) {  // ~30 second timeout
+	while (wifiMulti.run(10000) != WL_CONNECTED && wifi_retries < 3) {	// ~30 second timeout
 		wifi_retries++;
 		Serial.print("-");
 	}
@@ -469,24 +469,6 @@ void loop() {
 			}
 			Serial.printf("%s MCU:%2.1f°C  WiFi:%idBm\n\n", getLocalTime(), temperatureRead(), WiFi.RSSI());
 		}
-
-		// --- Process the LED update schedule ---
-		// int ledUpdatesCount = 0;
-
-		// Iterate through the schedule to find updates that are due
-		// auto update = ledUpdateSchedule.begin();
-		// while (update != ledUpdateSchedule.end()) {
-		// 	if (epoch >= update->timestamp) {
-		// 		ledUpdatesCount++;
-		// 		setBlockColor(update->block, update->color);  // Set the color for the block
-		// 		update = ledUpdateSchedule.erase(update);
-		// 	} else {
-		// 		++update;
-		// 	}
-		// }
-
-		// if (ledUpdatesCount > 0)
-		// 	Serial.printf("Processed %i LED updates from schedule.\n", ledUpdatesCount);
 
 		// --- Handle button presses ---
 		checkButton(&brightnessDownButton);
