@@ -180,6 +180,10 @@ void handleWiFiImprov() {
 			wifiNetworkIndex++;	 // Skip empty SSIDs
 		}
 
+		if (wifiNetworkIndex >= MAX_WIFI_NETWORKS) {
+			return;	 // No saved WiFi networks available
+		}
+
 		wifiConnected = attemptConnectToSavedWiFi(wifiNetworkIndex);
 	}
 }
