@@ -143,7 +143,7 @@
             <div id="flasher">
                 <ol class="instructions">
                     <li>Plug in your board's data port to a USB port on your computer. We will install the latest
-                        firmware (<span id="verstr">v1.0.0</span>).</li>
+                        firmware (<span id="verstr"></span>).</li>
                     <li id="coms">Hit "Connect Device" and select the correct COM port (USB JTAG/serial debug unit).
                     </li>
                 </ol>
@@ -166,13 +166,23 @@
         </div>
     </div>
     <script>
+        async function getManifestVersion() {
+            try {
+                const response = await fetch('bin/Auckland-LED-Rail-Map-V1.0.0/manifest.json');
+                if (!response.ok) throw new Error('Network response was not ok');
+                const manifest = await response.json();
+                document.getElementById('verstr').textContent = 'v' + (manifest.version || 'unknown');
+            } catch (e) {
+                document.getElementById('verstr').textContent = 'unknown';
+            }
+        }
         function checkSupported() {
             if (document.getElementById('inst').hasAttribute('install-unsupported')) unsupported();
         }
-
         function unsupported() {
             document.getElementById('flasher').innerHTML = "Sorry, your browser is not yet supported!<br>Please try on Desktop Chrome or Edge.<br>";
         }
+        window.addEventListener('DOMContentLoaded', getManifestVersion);
     </script>
 </body>
 
