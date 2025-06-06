@@ -2,16 +2,13 @@
 #include <ArduinoJson.h>
 #include <HTTPClient.h>
 #include <NeoPixelBus.h>
-#include <NeoPixelBusLg.h>
+#include <NeoPixelBusLg.h>	// For
 #include <WiFi.h>
-#include <WiFiMulti.h>
 #include <esp_sntp.h>
-#include <time.h>  // Required for time_t
-#include <vector>  // Required for std::vector
+#include <time.h>
+#include <vector>
 
-#include "secrets.h"
-
-WiFiMulti wifiMulti;
+#include "WiFiConfig.h"
 
 // Array of server URLs for failover
 const char* serverURLs[] = {
@@ -379,7 +376,7 @@ void setup() {
 
 	// Hardware Serial
 	Serial0.begin(115200);
-	Serial0.setDebugOutput(true);
+	// Serial0.setDebugOutput(true);
 
 	// USB Serial
 	Serial.begin();
@@ -425,32 +422,17 @@ void setup() {
 	setStatusLedState(WIFI_LED_PIN, LED_BLINK_GREEN_FAST);
 	WiFi.mode(WIFI_STA);
 	WiFi.setTxPower(WIFI_POWER_15dBm);	// Set WiFi power to avoid brownouts
-	const int numWiFiNetworks = sizeof(wifiNetworks) / sizeof(wifiNetworks[0]);
-	for (int i = 0; i < numWiFiNetworks; i++) {
-		wifiMulti.addAP(wifiNetworks[i].ssid, wifiNetworks[i].password);
-		Serial.printf("Added WiFi Network %d: %s\n", i, wifiNetworks[i].ssid);
-	}
+	WiFi.disconnect();
 
-	Serial.print("Connecting to WiFi ");
-	uint16_t wifi_retries = 0;
-	// Use WiFiMulti's run() to handle connection attempts
-	while (wifiMulti.run(10000) != WL_CONNECTED && wifi_retries < 3) {	// ~30 second timeout
-		wifi_retries++;
-		Serial.print("-");
-	}
-
-	if (WiFi.status() == WL_CONNECTED) {
-		Serial.printf("> Connected! IP Address:%s in %ims\n", WiFi.localIP().toString(), millis());
-	} else {
-		Serial.println("X Connection Failed!");
-		setStatusLedState(WIFI_LED_PIN, LED_OFF);
-		setStatusLedState(CONFIG_LED_PIN, LED_BLINK_RED_SLOW);
-	}
+	WiFiImprovSetup();
 
 	Serial.println(getSystemInfo());
 }
 
 void loop() {
+
+	handleWiFiImprov();	 // Handle WiFi credentials setup via WebSerial
+
 	if (WiFi.status() == WL_CONNECTED) {
 		time_t epoch = time(nullptr);  // Get current time
 
@@ -482,9 +464,7 @@ void loop() {
 		}
 
 	} else {
-		Serial.println("WiFi disconnected, attempting to reconnect...");
 		setStatusLedState(WIFI_LED_PIN, LED_ON_RED);
-		wifiMulti.run(30 * 1000);  // Attempt to reconnect
 	}
 	vTaskDelay(pdMS_TO_TICKS(10));	// Delay to yield to other tasks
 }

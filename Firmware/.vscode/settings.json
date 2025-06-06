@@ -7,6 +7,7 @@
         "DCORE",
         "espressif",
         "HTTPC",
+        "Improv",
         "IRAM",
         "Kbps",
         "makuna",
@@ -15,7 +16,9 @@
         "NZDT",
         "NZST",
         "QOUT",
+        "Roboto",
         "RSSI",
+        "Segoe",
         "sntp"
     ]
 }
