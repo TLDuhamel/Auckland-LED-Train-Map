@@ -23,13 +23,9 @@ jobs:
           key: ${{ runner.os }}-pio
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: "3.13"
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
-
-      - name: Build PlatformIO Project
-        working-directory: ./Firmware
-        run: pio run -e Auckland_Rail_Network_V1_0_0
 
       - name: Run mergebin
         working-directory: ./Firmware
@@ -65,20 +61,13 @@ jobs:
           mkdir -p _site/bin
           cp "Web Installer/led-rails.html" _site/
           cp "Web Installer/favicon.png" _site/
-          # Copy the existing V1.0.0 directory contents
-          if [ -d "Web Installer/bin/Auckland-LED-Rail-Map-V1.0.0" ]; then
-            cp -r "Web Installer/bin/Auckland-LED-Rail-Map-V1.0.0" _site/bin/
-          else
-            # If the source directory doesn't exist, create the target structure
-            mkdir -p _site/bin/Auckland-LED-Rail-Map-V1.0.0
-          fi
           # Overwrite/place the new firmware from the artifact
           cp staging_firmware/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.0.0/firmware-merged.bin
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: "_site"
 
       - name: Deploy to GitHub Pages
         id: deployment
