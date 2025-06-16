@@ -384,6 +384,10 @@ void parseLEDMap(const String& downloadedJson) {
 	ledUpdatePending = true;  // Mark that an update is pending
 }
 
+void onCdcRxEvent(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data) {
+	improvSerial.handleSerial();
+}
+
 void setup() {
 	xTaskCreate(statusLedManagerTask, "Status LED Manager", 1024, NULL, 1, &statusLedTaskHandle);
 
@@ -393,6 +397,7 @@ void setup() {
 	// USB Serial
 	Serial.begin();
 	Serial.setDebugOutput(true);
+	Serial.onEvent(ARDUINO_HW_CDC_RX_EVENT, onCdcRxEvent);
 
 	pinMode(LVL_Shifter_EN, OUTPUT);
 	digitalWrite(LVL_Shifter_EN, HIGH);	 //Disable LVL Shifter
