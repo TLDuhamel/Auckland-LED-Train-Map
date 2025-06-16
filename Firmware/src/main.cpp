@@ -2,7 +2,7 @@
 #include <ArduinoJson.h>
 #include <HTTPClient.h>
 #include <NeoPixelBus.h>
-#include <NeoPixelBusLg.h>	// For
+#include <NeoPixelBusLg.h>
 #include <WiFi.h>
 #include <esp_sntp.h>
 #include <time.h>
@@ -11,9 +11,9 @@
 #include "WiFiConfig.h"
 
 // Array of server URLs for failover
-const char* serverURLs[] = {
-	"http://keastudios.co.nz/ledmap100.json",
-	"http://192.168.86.31:3000/ledmap100.json",
+String serverURLs[] = {
+	String("http://keastudios.co.nz/akl-ltm/") + BACKEND_VERSION + ".json",
+	String("http://192.168.86.31:3000/akl-ltm/") + BACKEND_VERSION + ".json",
 };
 const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
 int currentServerIndex = 0;
@@ -125,18 +125,26 @@ void checkButton(Button* button) {
 	}
 }
 
-const char* getLocalTime() {
+const char* getLocalTime(time_t epoch) {
 	struct tm timeinfo;
-	static char buffer[64];	 // Buffer for formatted time string
-	if (!getLocalTime(&timeinfo)) {
+	static char buffer[64];
+	struct timeval tv;
+
+	// Convert epoch to local time
+	if (!localtime_r(&epoch, &timeinfo)) {
 		return "No time available";
 	}
-	return strftime(buffer, sizeof(buffer), "%Y/%m/%d %H:%M:%S", &timeinfo) ? buffer : "Format error";
+	gettimeofday(&tv, nullptr);
+	int ms = tv.tv_usec / 1000;
+	if (strftime(buffer, sizeof(buffer), "%H:%M:%S", &timeinfo)) {
+		snprintf(buffer + strlen(buffer), sizeof(buffer) - strlen(buffer), ".%03d", ms);
+		return buffer;
+	}
+	return "Format error";
 }
 
 void timeavailable(struct timeval* t) {
-	Serial.println("Got time adjustment from NTP!");
-	Serial.println(getLocalTime());
+	Serial.println("NTP Synced");
 }
 
 void setCharlieplexedLED(uint8_t pin, charlieplexedLedState state) {
@@ -258,7 +266,7 @@ String downloadJSON() {
 
 	for (int i = 0; i < numServers; i++) {
 		int serverIndex = (currentServerIndex + i) % numServers;
-		const char* url = serverURLs[serverIndex];
+		String url = serverURLs[serverIndex];
 		http.setTimeout(10000);	 // Set timeout to 10 seconds per server
 		http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
 		http.begin(url);
@@ -270,7 +278,7 @@ String downloadJSON() {
 			currentServerIndex = serverIndex;  // Update to the successful server
 			return payload;
 		} else {
-			Serial.printf("Fetch from %s returned: %i (%s)\n", url, httpCode, http.errorToString(httpCode).c_str());
+			Serial.printf("Fetch from %s returned: %i (%s)\n", url.c_str(), httpCode, http.errorToString(httpCode).c_str());
 			http.end();
 		}
 	}
@@ -278,9 +286,11 @@ String downloadJSON() {
 }
 
 void setBlockColor(uint16_t block, int colorId) {
-	if (blockColorIds[block] < colorId) {
-		blockColorIds[block] = colorId;	 // Update the color ID for the block if it's higher
+	if (colorId < blockColorIds[block]) {
+		return;	 // Do not update if the block if it is low priority
 	}
+
+	blockColorIds[block] = colorId;	 // Update the color ID for the block if it's higher
 
 	// Set the color on the appropriate strand based on the block number
 	if (block >= 100 && block <= 207) {
@@ -292,7 +302,7 @@ void setBlockColor(uint16_t block, int colorId) {
 	}
 }
 
-void drawMap() {
+void drawMap(time_t epoch) {
 	// Clear both strands
 	nalNIMT.ClearTo(black);
 	strandMNK.ClearTo(black);
@@ -302,9 +312,8 @@ void drawMap() {
 	}
 
 	// Draw the map based on the current LED update schedule
-	time_t epoch = time(nullptr);
 	for (const auto& update : ledUpdateSchedule) {
-		if (epoch >= update.timestamp) {
+		if (epoch > update.timestamp) {
 			setBlockColor(update.postBlock, update.colorId);
 		} else {
 			setBlockColor(update.preBlock, update.colorId);
@@ -327,8 +336,6 @@ void parseLEDMap(const String& downloadedJson) {
 		return;
 	}
 
-	ledUpdateSchedule.clear();
-
 	String version = doc["version"] | "";
 	time_t baseTimestamp = doc["timestamp"] | 0;
 	int updateOffset = doc["update"] | 0;
@@ -337,13 +344,20 @@ void parseLEDMap(const String& downloadedJson) {
 
 	if (baseTimestamp + updateOffset > nextFetchTime) {
 		nextFetchTime = baseTimestamp + updateOffset;
+	} else {
+		Serial.println("Fetched the same data twice");
+		return;	 // No need to update if the data is the same
 	}
 
-	Serial.printf("%ld Base timestamp: %ld, Update offset: %d, Next fetch time: %ld\n",
-				  time(nullptr),
-				  baseTimestamp,
-				  updateOffset,
-				  nextFetchTime);
+	if (String(BACKEND_VERSION) != version) {
+		Serial.printf("Backend version mismatch: expected %s, got %s\n", BACKEND_VERSION, version.c_str());
+	}
+
+	// Serial.printf("%ld Base timestamp: %ld, Update offset: %d, Next fetch time: %ld\n",
+	// 			  time(nullptr),
+	// 			  baseTimestamp,
+	// 			  updateOffset,
+	// 			  nextFetchTime);
 
 	// Populate colorTable from the JSON colors object
 	colorTable.clear();
@@ -352,6 +366,7 @@ void parseLEDMap(const String& downloadedJson) {
 		colorTable.push_back(RgbColor(rgb[0] | 0, rgb[1] | 0, rgb[2] | 0));
 	}
 
+	ledUpdateSchedule.clear();
 	for (JsonObject update : updates) {
 		JsonArray blocks = update["b"];
 		int colorId = update["c"];
@@ -367,8 +382,6 @@ void parseLEDMap(const String& downloadedJson) {
 	}
 
 	ledUpdatePending = true;  // Mark that an update is pending
-
-	Serial.printf("Parsed %d LED updates from JSON input. Version: %s\n", ledUpdateSchedule.size(), version.c_str());
 }
 
 void setup() {
@@ -376,7 +389,6 @@ void setup() {
 
 	// Hardware Serial
 	Serial0.begin(115200);
-	// Serial0.setDebugOutput(true);
 
 	// USB Serial
 	Serial.begin();
@@ -416,6 +428,8 @@ void setup() {
 
 	// --- Time Setup ---
 	sntp_set_time_sync_notification_cb(timeavailable);
+	sntp_set_sync_interval(1000 * 60 * 15);	 // Set sync interval to 15 minutes
+	sntp_set_sync_mode(SNTP_SYNC_MODE_IMMED);
 	configTzTime(time_zone, ntpServers[0], ntpServers[1], ntpServers[2]);
 
 	// --- WiFi Setup ---
@@ -431,25 +445,28 @@ void setup() {
 
 void loop() {
 
-	handleWiFiImprov();	 // Handle WiFi credentials setup via WebSerial
+	handleWiFiImprov();			   // Handle WiFi credentials setup via WebSerial
+	time_t epoch = time(nullptr);  // Get current time
 
 	if (WiFi.status() == WL_CONNECTED) {
-		time_t epoch = time(nullptr);  // Get current time
+		setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN);
 
 		// --- Fetch new data periodically ---
 		if (epoch > nextFetchTime) {
-			nextFetchTime = epoch + 6;	// Set next update time to at least 6s from now
 
 			String downloadedJson = downloadJSON();
 			if (downloadedJson.length() > 0) {
-				setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN);
+				setStatusLedState(CONFIG_LED_PIN, LED_ON_GREEN);
 				parseLEDMap(downloadedJson);  // This populates/updates the schedule
-				Serial.printf("Update @ %ld. %ld seconds from now...\n", nextFetchTime, nextFetchTime - time(nullptr));
 			} else {
 				Serial.println("All servers failed to provide data.");
-				setStatusLedState(WIFI_LED_PIN, LED_BLINK_RED_SLOW);
+				setStatusLedState(CONFIG_LED_PIN, LED_ON_RED);
 			}
-			Serial.printf("%s MCU:%2.1f°C  WiFi:%idBm\n\n", getLocalTime(), temperatureRead(), WiFi.RSSI());
+
+			nextFetchTime = max(nextFetchTime, epoch + 6);	// Ensure we don't fetch too frequently
+
+			Serial.printf("%s MCU:%2.0f°C  WiFi:%idBm\n", getLocalTime(epoch), temperatureRead(), WiFi.RSSI());
+			Serial.flush();
 		}
 
 		// --- Handle button presses ---
@@ -459,7 +476,7 @@ void loop() {
 
 		// --- Push updates to the LED strips only if changes were made ---
 		if (ledUpdatePending || lastMapDrawTime < epoch) {
-			drawMap();	// Draw the map with the current updates
+			drawMap(epoch);	 // Draw the map with the current updates
 			ledUpdatePending = false;
 		}
 
