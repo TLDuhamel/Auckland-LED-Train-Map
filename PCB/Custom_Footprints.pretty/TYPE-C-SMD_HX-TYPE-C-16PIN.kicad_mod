@@ -1,0 +1,408 @@
+(footprint "TYPE-C-SMD_HX-TYPE-C-16PIN"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TYPE-C-SMD_HX-TYPE-C-16PIN footprint")
+	(tags "TYPE-C-SMD_HX-TYPE-C-16PIN footprint C2927039")
+	(property "Reference" "U5"
+		(at 0 -4.38 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b312dbc5-2eea-41af-ba26-f38a5fa8b74c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Connector, USB-TYPE-C-16P"
+		(at 0 7.08 0)
+		(layer "F.Fab")
+		(uuid "3581ef51-e485-4de7-bc49-497b38c65c42")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/0EF8F885FCCEA71F60E9E85152155021.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "115f6973-b464-4f29-ab93-756545ba440d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "3A 1 Horizontal attachment 16P Female -25℃~+85℃ Type-C SMD USB Connectors ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cb133fe4-57f9-4628-8023-6cd5ef7cedc3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C2927039"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42c54f48-600e-4fd0-8dd6-cfadbe1efef9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "DEALON"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7114bc78-bb67-461d-a8aa-afee0212cdcf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Part" "USB-TYPE-C-019"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79d3887f-9ddd-4cae-9813-c565cc422079")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PartID" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0721bf0-2758-44d1-8382-fb4375d8c522")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Process" "SMT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "176538da-af2b-4430-a048-78a96cdec123")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Circuits" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9f4971f4-6c13-487a-8af6-5f18c11674b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Current Rating" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96d1c306-60bd-4ca7-8643-ae3d320899ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "DC Resistance" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37554e14-3d40-4530-a7e3-c6fd4101c6b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Impedance @ Frequency" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13f1eb05-31fc-4419-8c80-2380c00449af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.8 5)
+		(end 4.8 5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "89b1c2ae-3971-4a74-b910-684f1e96dace")
+	)
+	(fp_line
+		(start -4.75 -3)
+		(end 4.75 -3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "229ef6ab-674a-4140-bd46-782fe6d81c6c")
+	)
+	(fp_line
+		(start -4.75 5.25)
+		(end -4.75 -3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a27913e4-4c4d-4d71-bad3-cba8d9cb1afb")
+	)
+	(fp_line
+		(start 4.75 -3)
+		(end 4.75 5.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "1882dcdd-d541-4bc0-9171-af033babe273")
+	)
+	(fp_line
+		(start 4.75 5.25)
+		(end -4.75 5.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "f55f3bc3-1d3e-4fa2-97d6-72f0ad00f258")
+	)
+	(fp_text user "REF**"
+		(at 0 9.080001 0)
+		(layer "F.Fab")
+		(uuid "d9f750b2-e68d-439e-a14b-ab06aab63ef7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -2.89 -1.3)
+		(size 0.6 0.6)
+		(drill 0.6)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "2a0bdb60-d3ee-4668-8c34-3b5f0cc997be")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.89 -1.3)
+		(size 0.6 0.6)
+		(drill 0.6)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "28590f08-0340-4c85-bbba-8030903efa2a")
+	)
+	(pad "A5" smd rect
+		(at -1.25 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "41c04c9d-d2b8-4d35-90c2-577cabd3351b")
+	)
+	(pad "A6" smd rect
+		(at -0.25 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "99ceb5c8-6085-4899-99e7-3c0f46ef7ff1")
+	)
+	(pad "A7" smd rect
+		(at 0.25 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "89d6ba3c-cdb2-438a-8973-0b4243aaffc5")
+	)
+	(pad "A8" smd rect
+		(at 1.25 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9c7b5af4-d2a6-4a10-9b38-0d30ac9c22eb")
+	)
+	(pad "A9B4" smd rect
+		(at 2.4 -2.5)
+		(size 0.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "be3519b2-3203-47b3-b0aa-a17b31f26a2d")
+	)
+	(pad "A12B1" smd rect
+		(at 3.2 -2.5)
+		(size 0.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ada07713-3827-483f-90d5-7c6066597c6b")
+	)
+	(pad "B5" smd rect
+		(at 1.75 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3b549d15-2e0c-41e8-92c5-9ef099f8ffb5")
+	)
+	(pad "B6" smd rect
+		(at 0.75 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ff5d247a-2839-482f-93b2-73c6c51b5f64")
+	)
+	(pad "B7" smd rect
+		(at -0.75 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "260f91f3-8b76-417e-9712-9415fc06151d")
+	)
+	(pad "B8" smd rect
+		(at -1.75 -2.5)
+		(size 0.3 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "13d4d3f5-9152-464d-a802-9294fd06cea3")
+	)
+	(pad "B9A4" smd rect
+		(at -2.4 -2.5)
+		(size 0.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5f250308-3bfa-4e94-9c88-b9f983bf560d")
+	)
+	(pad "B12A1" smd rect
+		(at -3.2 -2.5)
+		(size 0.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e875b889-2d08-44f4-8a01-82d935ba9475")
+	)
+	(pad "S1" thru_hole oval
+		(at -4.33 -1.82)
+		(size 1.3 2.3)
+		(drill oval 0.5 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "87ecd604-7ee2-4a0e-b516-41fa9870bb92")
+	)
+	(pad "S1" thru_hole oval
+		(at -4.33 2.38)
+		(size 1.3 2.1)
+		(drill oval 0.5 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "93ae3618-e9b5-4c2a-bfe0-6e4c1c17d287")
+	)
+	(pad "S1" thru_hole circle
+		(at -2 1)
+		(size 0.5 0.5)
+		(drill 0.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "e0edd816-aa06-49c9-82f8-f4dfeb4a8e7b")
+	)
+	(pad "S1" thru_hole circle
+		(at -2 3)
+		(size 0.5 0.5)
+		(drill 0.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "eba1d369-cdbe-4515-bb67-ab54f3a59cd2")
+	)
+	(pad "S1" smd roundrect
+		(at 0 2)
+		(size 5 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1666666667)
+		(zone_connect 1)
+		(uuid "6ce7772e-ed43-48fa-ae1b-be92031772b4")
+	)
+	(pad "S1" thru_hole circle
+		(at 2 1)
+		(size 0.5 0.5)
+		(drill 0.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "0a30453a-a262-4654-a496-1e28c52acb52")
+	)
+	(pad "S1" thru_hole circle
+		(at 2 3)
+		(size 0.5 0.5)
+		(drill 0.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "d4498ba5-71f7-4015-abf1-75e721e3e5af")
+	)
+	(pad "S1" thru_hole oval
+		(at 4.33 -1.82)
+		(size 1.3 2.3)
+		(drill oval 0.5 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "66fcde71-fe9b-4b7e-82a0-94fbf2e4b883")
+	)
+	(pad "S1" thru_hole oval
+		(at 4.33 2.38)
+		(size 1.3 2.1)
+		(drill oval 0.5 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "76d51850-6aaa-44f9-b599-616619e2654b")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/TYPE-C-SMD_HX-TYPE-C-16PIN.step"
+		(offset
+			(xyz 0 -1.063 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

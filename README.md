@@ -1,5 +1,11 @@
 # Auckland Live LED Train Map
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PlatformIO](https://img.shields.io/badge/built%20with-PlatformIO-orange?logo=platformio)](https://platformio.org/)
+[![Made with KiCad](https://img.shields.io/badge/Made%20with-KiCad-blue?logo=kicad)](https://kicad.org/)
+
+**You can now support my work by buying this through my store:** [**https://keastudios.co.nz/store/akl-ltm/**](https://keastudios.co.nz/store/akl-ltm/)
+
 A physical, real-time LED map of the Auckland train network, powered by an ESP32-C3 microcontroller. Train movements are displayed using addressable RGB LEDs, with live data fetched over Wi-Fi.
 
 ---

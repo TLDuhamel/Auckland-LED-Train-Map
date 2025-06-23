@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.6,
-          "width": 0.5
+          "height": 3.0,
+          "width": 5.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -527,7 +527,7 @@
       },
       {
         "bus_width": 24,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.15,
         "diff_pair_width": 0.3132,
         "line_style": 0,
@@ -626,7 +626,7 @@
       "exclude_dnp": true,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -1122,8 +1122,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "Price"
+      "sort_asc": true,
+      "sort_field": "${QUANTITY}"
     },
     "connection_grid_size": 50.0,
     "drawing": {

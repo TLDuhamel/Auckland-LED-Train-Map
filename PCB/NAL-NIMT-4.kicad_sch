@@ -6,14 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "Auckland Train Network Live Map")
-		(date "2025-04-26")
-		(rev "1")
+		(date "2025-06-23")
+		(rev "1.1.0")
 		(company "Kea Studios")
 		(comment 1 "©Chris Dirks")
 		(comment 2 "MIT License")
 	)
 	(lib_symbols
-		(symbol "PCM_JLCPCB-Capacitors:0402,10uF"
+		(symbol "PCM_JLCPCB-Capacitors:0402,1uF"
 			(pin_numbers
 				(hide yes)
 			)
@@ -32,7 +32,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "10uF"
+			(property "Value" "1uF"
 				(at 2.032 -0.3782 0)
 				(effects
 					(font
@@ -50,7 +50,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -59,7 +59,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(property "Description" "25V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -68,7 +68,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C15525"
+			(property "LCSC" "C52923"
 				(at 0 0 0)
 				(effects
 					(font
@@ -77,7 +77,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "1595146"
+			(property "Stock" "9606588"
 				(at 0 0 0)
 				(effects
 					(font
@@ -86,7 +86,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "0.007USD"
+			(property "Price" "0.006USD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -149,7 +149,7 @@
 					(hide yes)
 				)
 			)
-			(property "Part" "CL05A106MQ5NUNC"
+			(property "Part" "CL05A105KA5NQNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -158,7 +158,7 @@
 					(hide yes)
 				)
 			)
-			(property "Voltage Rated" "6.3V"
+			(property "Voltage Rated" "25V"
 				(at 2.032 -2.0462 0)
 				(effects
 					(font
@@ -167,7 +167,7 @@
 					(justify left)
 				)
 			)
-			(property "Tolerance" "±20%"
+			(property "Tolerance" "±10%"
 				(at 0 0 0)
 				(effects
 					(font
@@ -176,7 +176,7 @@
 					(hide yes)
 				)
 			)
-			(property "Capacitance" "10uF"
+			(property "Capacitance" "1uF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -203,7 +203,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "0402,10uF_0_1"
+			(symbol "0402,1uF_0_1"
 				(polyline
 					(pts
 						(xy -1.27 0.635) (xy 1.27 0.635)
@@ -229,263 +229,7 @@
 					)
 				)
 			)
-			(symbol "0402,10uF_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.175)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.175)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "PCM_JLCPCB-Capacitors:0402,220nF"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 2.032 1.668 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "220nF"
-				(at 2.032 -0.3782 0)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_JLCPCB:C_0402"
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B224KO5NNNC_C16772.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "16V 220nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C16772"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Stock" "351761"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.008USD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Process" "SMT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Minimum Qty" "20"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Attrition Qty" "10"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Class" "Basic Component"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Samsung Electro-Mechanics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part" "CL05B224KO5NNNC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Voltage Rated" "16V"
-				(at 2.032 -2.0462 0)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Tolerance" "±10%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Capacitance" "220nF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Temperature Coefficient" "X7R"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "0402,220nF_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0402,220nF_1_1"
+			(symbol "0402,1uF_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 3.175)
@@ -537,12 +281,13 @@
 					)
 				)
 			)
-			(property "Value" "WS2812B"
+			(property "Value" "XL-1615RGBC-WS2812B-S"
 				(at 5.334 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -550,7 +295,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
@@ -574,25 +318,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C5349954"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part" "XL-1615RGBC-WS2812B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "XINGLIGHT"
+			(property "LCSC" "C41413180"
 				(at 0 0 0)
 				(effects
 					(font
@@ -621,17 +347,6 @@
 				)
 			)
 			(symbol "LED, WS2812B, 1615_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
@@ -714,6 +429,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -1628,12 +1354,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 96.6976 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -1665,7 +1392,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -1674,7 +1401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -1683,7 +1410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -1692,20 +1419,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 86.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 86.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2407,12 +2136,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 233.8576 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -2444,7 +2174,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 223.52 27.94 0)
 			(effects
 				(font
@@ -2453,7 +2183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 223.52 27.94 0)
 			(effects
 				(font
@@ -2462,7 +2192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 223.52 27.94 0)
 			(effects
 				(font
@@ -2471,20 +2201,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 223.52 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 223.52 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2509,7 +2241,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0402,10uF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,1uF")
 		(at 124.46 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2527,7 +2259,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "1uF"
 			(at 126.492 151.5082 0)
 			(effects
 				(font
@@ -2545,7 +2277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2554,7 +2286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "25V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2563,7 +2295,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15525"
+		(property "LCSC" "C52923"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2572,7 +2304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "1595146"
+		(property "Stock" "9606588"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2581,7 +2313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.007USD"
+		(property "Price" "0.006USD"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2644,7 +2376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL05A106MQ5NUNC"
+		(property "Part" "CL05A105KA5NQNC"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2653,7 +2385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rated" "6.3V"
+		(property "Voltage Rated" "25V"
 			(at 126.492 153.1762 0)
 			(effects
 				(font
@@ -2662,7 +2394,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "±20%"
+		(property "Tolerance" "±10%"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2671,7 +2403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Capacitance" "10uF"
+		(property "Capacitance" "1uF"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -2695,6 +2427,42 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Circuits" ""
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current Rating" ""
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DC Resistance" ""
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Impedance @ Frequency" ""
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2796,12 +2564,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 50.9776 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -2833,7 +2602,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 40.64 27.94 0)
 			(effects
 				(font
@@ -2842,7 +2611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 40.64 27.94 0)
 			(effects
 				(font
@@ -2851,7 +2620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 40.64 27.94 0)
 			(effects
 				(font
@@ -2860,20 +2629,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 40.64 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 40.64 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2898,7 +2669,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0402,220nF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,1uF")
 		(at 139.7 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2916,7 +2687,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220nF"
+		(property "Value" "1uF"
 			(at 141.732 151.5082 0)
 			(effects
 				(font
@@ -2934,7 +2705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B224KO5NNNC_C16772.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -2943,7 +2714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V 220nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "25V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -2952,7 +2723,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C16772"
+		(property "LCSC" "C52923"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -2961,7 +2732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "351761"
+		(property "Stock" "9606588"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -2970,7 +2741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.008USD"
+		(property "Price" "0.006USD"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -3033,7 +2804,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL05B224KO5NNNC"
+		(property "Part" "CL05A105KA5NQNC"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -3042,7 +2813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rated" "16V"
+		(property "Voltage Rated" "25V"
 			(at 141.732 153.1762 0)
 			(effects
 				(font
@@ -3060,7 +2831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Capacitance" "220nF"
+		(property "Capacitance" "1uF"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -3069,7 +2840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature Coefficient" "X7R"
+		(property "Temperature Coefficient" "X5R"
 			(at 139.7 151.13 0)
 			(effects
 				(font
@@ -3084,6 +2855,42 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Circuits" ""
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current Rating" ""
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DC Resistance" ""
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Impedance @ Frequency" ""
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3251,12 +3058,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 50.9776 57.1377 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -3288,7 +3096,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 40.64 60.96 0)
 			(effects
 				(font
@@ -3297,7 +3105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 40.64 60.96 0)
 			(effects
 				(font
@@ -3306,7 +3114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 40.64 60.96 0)
 			(effects
 				(font
@@ -3315,20 +3123,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 40.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 40.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3370,12 +3180,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 210.9976 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -3407,7 +3218,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 200.66 27.94 0)
 			(effects
 				(font
@@ -3416,7 +3227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 200.66 27.94 0)
 			(effects
 				(font
@@ -3425,7 +3236,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 200.66 27.94 0)
 			(effects
 				(font
@@ -3434,20 +3245,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 200.66 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 200.66 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3555,12 +3368,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 73.8376 57.1377 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -3592,7 +3406,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 63.5 60.96 0)
 			(effects
 				(font
@@ -3601,7 +3415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 63.5 60.96 0)
 			(effects
 				(font
@@ -3610,7 +3424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 63.5 60.96 0)
 			(effects
 				(font
@@ -3619,20 +3433,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 63.5 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 63.5 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3855,7 +3671,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0402,220nF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,1uF")
 		(at 132.08 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3873,7 +3689,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220nF"
+		(property "Value" "1uF"
 			(at 134.112 151.5082 0)
 			(effects
 				(font
@@ -3891,7 +3707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B224KO5NNNC_C16772.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -3900,7 +3716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V 220nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "25V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -3909,7 +3725,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C16772"
+		(property "LCSC" "C52923"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -3918,7 +3734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "351761"
+		(property "Stock" "9606588"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -3927,7 +3743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.008USD"
+		(property "Price" "0.006USD"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -3990,7 +3806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CL05B224KO5NNNC"
+		(property "Part" "CL05A105KA5NQNC"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -3999,7 +3815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rated" "16V"
+		(property "Voltage Rated" "25V"
 			(at 134.112 153.1762 0)
 			(effects
 				(font
@@ -4017,7 +3833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Capacitance" "220nF"
+		(property "Capacitance" "1uF"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -4026,7 +3842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature Coefficient" "X7R"
+		(property "Temperature Coefficient" "X5R"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -4041,6 +3857,42 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Circuits" ""
+			(at 132.08 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current Rating" ""
+			(at 132.08 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DC Resistance" ""
+			(at 132.08 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Impedance @ Frequency" ""
+			(at 132.08 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4076,12 +3928,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 119.5576 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -4113,7 +3966,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 109.22 27.94 0)
 			(effects
 				(font
@@ -4122,7 +3975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 109.22 27.94 0)
 			(effects
 				(font
@@ -4131,7 +3984,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 109.22 27.94 0)
 			(effects
 				(font
@@ -4140,20 +3993,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 109.22 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 109.22 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4327,12 +4182,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 142.4176 87.6177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -4364,7 +4220,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 132.08 91.44 0)
 			(effects
 				(font
@@ -4373,7 +4229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 132.08 91.44 0)
 			(effects
 				(font
@@ -4382,7 +4238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 132.08 91.44 0)
 			(effects
 				(font
@@ -4391,20 +4247,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 132.08 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 132.08 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4446,12 +4304,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 142.4176 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -4483,7 +4342,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 132.08 27.94 0)
 			(effects
 				(font
@@ -4492,7 +4351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 132.08 27.94 0)
 			(effects
 				(font
@@ -4501,7 +4360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 132.08 27.94 0)
 			(effects
 				(font
@@ -4510,20 +4369,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 132.08 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 132.08 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4697,12 +4558,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 119.5576 57.1377 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -4734,7 +4596,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 109.22 60.96 0)
 			(effects
 				(font
@@ -4743,7 +4605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 109.22 60.96 0)
 			(effects
 				(font
@@ -4752,7 +4614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 109.22 60.96 0)
 			(effects
 				(font
@@ -4761,20 +4623,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 109.22 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 109.22 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5080,12 +4944,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 188.1376 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -5117,7 +4982,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 177.8 27.94 0)
 			(effects
 				(font
@@ -5126,7 +4991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 177.8 27.94 0)
 			(effects
 				(font
@@ -5135,7 +5000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 177.8 27.94 0)
 			(effects
 				(font
@@ -5144,20 +5009,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 177.8 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 177.8 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5265,12 +5132,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 73.8376 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -5302,7 +5170,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 63.5 27.94 0)
 			(effects
 				(font
@@ -5311,7 +5179,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 63.5 27.94 0)
 			(effects
 				(font
@@ -5320,7 +5188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 63.5 27.94 0)
 			(effects
 				(font
@@ -5329,20 +5197,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 63.5 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 63.5 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5450,12 +5320,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 142.4176 57.1377 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -5487,7 +5358,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -5496,7 +5367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -5505,7 +5376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -5514,20 +5385,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 132.08 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 132.08 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5833,12 +5706,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 165.2776 24.1177 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -5870,7 +5744,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 154.94 27.94 0)
 			(effects
 				(font
@@ -5879,7 +5753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 154.94 27.94 0)
 			(effects
 				(font
@@ -5888,7 +5762,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 154.94 27.94 0)
 			(effects
 				(font
@@ -5897,20 +5771,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 154.94 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 154.94 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5952,12 +5828,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 142.4176 118.0977 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -5989,7 +5866,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 132.08 121.92 0)
 			(effects
 				(font
@@ -5998,7 +5875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 132.08 121.92 0)
 			(effects
 				(font
@@ -6007,7 +5884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 132.08 121.92 0)
 			(effects
 				(font
@@ -6016,20 +5893,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 132.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 132.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -6137,12 +6016,13 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
+		(property "Value" "XL-1615RGBC-WS2812B-S"
 			(at 96.6976 57.1377 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
@@ -6174,7 +6054,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349954"
+		(property "LCSC" "C41413180"
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -6183,7 +6063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "XL-1615RGBC-WS2812B"
+		(property "Circuits" ""
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -6192,7 +6072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XINGLIGHT"
+		(property "Current Rating" ""
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -6201,20 +6081,22 @@
 				(hide yes)
 			)
 		)
-		(property "PartID" ""
+		(property "DC Resistance" ""
 			(at 86.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Process" "SMT"
+		(property "Impedance @ Frequency" ""
 			(at 86.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
