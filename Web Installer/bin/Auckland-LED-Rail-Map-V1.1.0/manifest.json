@@ -6,7 +6,7 @@
             "chipFamily": "ESP32-C3",
             "parts": [
                 {
-                    "path": "firmware-merged-100.bin",
+                    "path": "firmware-merged-110.bin",
                     "offset": 0
                 }
             ]

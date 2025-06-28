@@ -86,6 +86,7 @@
             color: #fff;
             border: none;
             border-radius: 25px;
+            text-align: center;
         }
 
         esp-web-install-button {
@@ -121,6 +122,30 @@
             font-size: 0.95em;
         }
 
+        .version-btn-group {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .version-btn {
+            flex: 1;
+            padding: 12px 0;
+            font-size: 18px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            background-color: #09f;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .version-btn.selected {
+            background-color: #0c3;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
         @media (max-width: 600px) {
             .content {
                 padding: 8px;
@@ -142,23 +167,31 @@
         <main>
             <div id="flasher">
                 <ol class="instructions">
-                    <li>Plug in your board's data port to a USB port on your computer. We will install the latest
-                        firmware (<span id="verstr"></span>).</li>
+                    <li>Plug in your board's data port to a USB port on your computer.</li>
                     <li id="coms">Hit "Connect Device" and select the correct COM port (USB JTAG/serial debug unit).
                     </li>
                 </ol>
                 <div class="container">
-                    <esp-web-install-button id="inst" manifest="bin/Auckland-LED-Rail-Map-V1.0.0/manifest.json"
+                    <label style="margin-bottom:8px;">Choose the version of your map:</label>
+                    <div class="version-btn-group" style="display:flex; gap:12px; margin-bottom:32px;">
+                        <button type="button" class="btn version-btn" id="btn-v1-0-0"
+                            onclick="selectVersion('V1.0.0')">Auckland
+                            V1.0.0</button>
+                        <button type="button" class="btn version-btn selected" id="btn-v1-1-0"
+                            onclick="selectVersion('V1.1.0')">Auckland
+                            V1.1.0</button>
+                    </div>
+                    <esp-web-install-button id="inst" manifest="bin/Auckland-LED-Rail-Map-V1.1.0/manifest.json"
                         improv-wifi>
-                        <button class="btn" slot="activate">Connect Device</button>
+                        <button class="btn" id="install-btn" slot="activate">Connect to device</button>
                         <span slot="unsupported">Sorry, your browser does not support Web Serial. Please use Chrome or
                             Edge.</span>
                         <span slot="not-allowed">This tool requires HTTPS. Please use a secure connection.</span>
                     </esp-web-install-button>
                 </div>
             </div>
-            <p style="margin-top:24px; color:#888; font-size:0.95em;">Need help? Visit <a
-                    href="https://keastudios.co.nz/" target="_blank">Kea Studios</a></p>
+            <!-- <p style="margin-top:24px; color:#888; font-size:0.95em;">Need help? Visit <a
+                    href="https://keastudios.co.nz/" target="_blank">Kea Studios</a></p> -->
         </main>
         <div class="footer">
             This project is powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web
@@ -166,23 +199,39 @@
         </div>
     </div>
     <script>
-        async function getManifestVersion() {
-            try {
-                const response = await fetch('bin/Auckland-LED-Rail-Map-V1.0.0/manifest.json');
-                if (!response.ok) throw new Error('Network response was not ok');
-                const manifest = await response.json();
-                document.getElementById('verstr').textContent = 'v' + (manifest.version || 'unknown');
-            } catch (e) {
-                document.getElementById('verstr').textContent = 'unknown';
-            }
+        async function getManifestVersion(manifestPath) {
+            const response = await fetch(manifestPath);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const manifest = await response.json();
         }
+
+        function selectVersion(version) {
+            // Remove selected from all
+            document.getElementById('btn-v1-0-0').classList.remove('selected');
+            document.getElementById('btn-v1-1-0').classList.remove('selected');
+            let manifestPath = '';
+            if (version === 'V1.0.0') {
+                manifestPath = 'bin/Auckland-LED-Rail-Map-V1.0.0/manifest.json';
+                document.getElementById('btn-v1-0-0').classList.add('selected');
+            } else {
+                manifestPath = 'bin/Auckland-LED-Rail-Map-V1.1.0/manifest.json';
+                document.getElementById('btn-v1-1-0').classList.add('selected');
+            }
+            document.getElementById('inst').setAttribute('manifest', manifestPath);
+            document.getElementById('install-btn').textContent = 'Connect to device';
+            getManifestVersion(manifestPath);
+        }
+
         function checkSupported() {
             if (document.getElementById('inst').hasAttribute('install-unsupported')) unsupported();
+            else selectVersion('V1.1.0');
         }
+
         function unsupported() {
             document.getElementById('flasher').innerHTML = "Sorry, your browser is not yet supported!<br>Please try on Desktop Chrome or Edge.<br>";
         }
-        window.addEventListener('DOMContentLoaded', getManifestVersion);
+
+        console.log('LED-Rails Installer loaded successfully!');
     </script>
 </body>
 
