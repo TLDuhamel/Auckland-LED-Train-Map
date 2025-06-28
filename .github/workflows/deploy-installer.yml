@@ -71,8 +71,8 @@ jobs:
           cp "Web Installer/led-rails.html" _site/
           cp "Web Installer/favicon.png" _site/
           # Add the new firmware from the artifact (only from the correct paths)
-          cp staging_firmware/Firmware/.pio/build/Auckland_Rail_Network_V1_0_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.0.0/firmware-merged-100.bin
-          cp staging_firmware/Firmware/.pio/build/Auckland_Rail_Network_V1_1_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.1.0/firmware-merged-110.bin
+          cp staging_firmware/.pio/build/Auckland_Rail_Network_V1_0_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.0.0/firmware-merged-100.bin
+          cp staging_firmware/.pio/build/Auckland_Rail_Network_V1_1_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.1.0/firmware-merged-110.bin
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
