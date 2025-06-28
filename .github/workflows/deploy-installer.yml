@@ -11,8 +11,11 @@ permissions:
   id-token: write
 
 jobs:
-  build_firmware:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
@@ -27,37 +30,13 @@ jobs:
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
 
-      - name: Run mergebin for V1.0.0
+      - name: Build and merge V1.0.0
         working-directory: ./Firmware
         run: pio run -e Auckland_Rail_Network_V1_0_0 --target mergebin
 
-      - name: Run mergebin for V1.1.0
+      - name: Build and merge V1.1.0
         working-directory: ./Firmware
         run: pio run -e Auckland_Rail_Network_V1_1_0 --target mergebin
-
-      - name: Upload merged firmware artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: merged-firmware
-          path: |
-            Firmware/.pio/build/Auckland_Rail_Network_V1_0_0/firmware-merged.bin
-            Firmware/.pio/build/Auckland_Rail_Network_V1_1_0/firmware-merged.bin
-
-  deploy:
-    needs: build_firmware
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download merged firmware
-        uses: actions/download-artifact@v4
-        with:
-          name: merged-firmware
-          path: staging_firmware
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -70,9 +49,8 @@ jobs:
           cp -r "Web Installer/bin/Auckland-LED-Rail-Map-V1.1.0/." _site/bin/Auckland-LED-Rail-Map-V1.1.0/
           cp "Web Installer/led-rails.html" _site/
           cp "Web Installer/favicon.png" _site/
-          # Add the new firmware from the artifact (only from the correct paths)
-          cp staging_firmware/.pio/build/Auckland_Rail_Network_V1_0_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.0.0/firmware-merged-100.bin
-          cp staging_firmware/.pio/build/Auckland_Rail_Network_V1_1_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.1.0/firmware-merged-110.bin
+          cp Firmware/.pio/build/Auckland_Rail_Network_V1_0_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.0.0/firmware-merged-100.bin
+          cp Firmware/.pio/build/Auckland_Rail_Network_V1_1_0/firmware-merged.bin _site/bin/Auckland-LED-Rail-Map-V1.1.0/firmware-merged-110.bin
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
