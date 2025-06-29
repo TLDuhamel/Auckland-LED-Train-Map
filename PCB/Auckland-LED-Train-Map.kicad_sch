@@ -25846,6 +25846,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Circuits" ""
@@ -29709,6 +29710,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Circuits" ""
@@ -32668,6 +32670,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Circuits" ""
@@ -34367,7 +34370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "6V 2A 100A 4A 1206 Resettable Fuses ROHS"
 			(at 68.58 20.32 0)
 			(effects
 				(font
@@ -34376,7 +34379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "BORN"
 			(at 68.58 20.32 90)
 			(effects
 				(font
@@ -34385,7 +34388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "SMD1206-200/06N"
 			(at 68.58 20.32 90)
 			(effects
 				(font
@@ -37978,6 +37981,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Circuits" ""

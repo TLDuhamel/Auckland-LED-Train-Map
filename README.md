@@ -1,6 +1,6 @@
 # Auckland Live LED Train Map
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Hardware, Software and Documentation License: GPL-3.0-or-later](https://img.shields.io/badge/License-GPL3+-yellow.svg)](LICENSE)
 [![PlatformIO](https://img.shields.io/badge/built%20with-PlatformIO-orange?logo=platformio)](https://platformio.org/)
 [![Made with KiCad](https://img.shields.io/badge/Made%20with-KiCad-blue?logo=kicad)](https://kicad.org/)
 
@@ -113,6 +113,6 @@ Contributions are welcome! Open an issue or submit a pull request for improvemen
 
 ## License
 
-This project is released under the MIT license.
+This project is released under the GPL-3.0-or-later license.
 
 © 2025 Chris Dirks

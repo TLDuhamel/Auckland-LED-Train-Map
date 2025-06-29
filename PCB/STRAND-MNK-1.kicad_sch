@@ -2271,6 +2271,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 223.52 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 223.52 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c388d321-1c87-4a01-97ab-120218110f91")
 		)
@@ -2897,6 +2915,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 154.94 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 154.94 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "15c356ba-854e-479b-9d99-d95fd30a7323")
 		)
@@ -3143,6 +3179,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 269.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 269.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 269.24 83.82 0)
 			(effects
 				(font
@@ -3537,6 +3591,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 63.5 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 63.5 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4089b02b-1b9d-4583-b828-75f457599742")
 		)
@@ -3651,6 +3723,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 63.5 83.82 0)
 			(effects
 				(font
@@ -3839,6 +3929,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 154.94 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 154.94 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 154.94 83.82 0)
 			(effects
 				(font
@@ -4101,6 +4209,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 177.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 177.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f9c13d1f-ad3e-4866-9a60-69190921298f")
 		)
@@ -4215,6 +4341,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 246.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 246.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 246.38 83.82 0)
 			(effects
 				(font
@@ -4411,6 +4555,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 86.36 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 86.36 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "78f50101-dc69-4fa8-b6b6-96aabf20ae04")
 		)
@@ -4525,6 +4687,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 200.66 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 200.66 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 200.66 20.32 0)
 			(effects
 				(font
@@ -4721,6 +4901,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 132.08 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 132.08 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1791ec8e-a6cc-4a72-b7a9-d20ba9b843ba")
 		)
@@ -4901,6 +5099,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 246.38 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 246.38 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 246.38 20.32 0)
 			(effects
 				(font
@@ -5155,6 +5371,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 109.22 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 109.22 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 109.22 20.32 0)
 			(effects
 				(font
@@ -5615,6 +5849,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 200.66 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 200.66 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "970e3dc8-7ab2-4da8-83d5-e3f1092bf7be")
 		)
@@ -5927,6 +6179,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 40.64 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 40.64 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 40.64 147.32 0)
 			(effects
 				(font
@@ -6387,6 +6657,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "39083e59-b212-4d7e-bb33-d7bea5691e82")
 		)
@@ -6633,6 +6921,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 223.52 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 223.52 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 223.52 83.82 0)
 			(effects
 				(font
@@ -6895,6 +7201,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 109.22 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 109.22 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "41995b66-1ee8-4037-854b-1682570b0831")
 		)
@@ -7075,6 +7399,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 269.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 269.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 269.24 20.32 0)
 			(effects
 				(font
@@ -7337,6 +7679,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5eb8dbb6-fd31-4a06-a5fd-e4cb25f38b3b")
 		)
@@ -7517,6 +7877,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 177.8 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 177.8 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 177.8 20.32 0)
 			(effects
 				(font
@@ -7771,6 +8149,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 246.38 147.32 0)
 			(effects
 				(font
@@ -8669,6 +9065,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 86.36 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 86.36 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4ebf0dc0-9ae8-4b93-afa4-586804a328fa")
 		)
@@ -9047,6 +9461,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 269.24 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 269.24 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 269.24 147.32 0)
 			(effects
 				(font
@@ -9573,6 +10005,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 223.52 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 223.52 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6a4eab7-6549-4564-9582-8244d723e67f")
 		)
@@ -9753,6 +10203,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 40.64 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 40.64 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 40.64 20.32 0)
 			(effects
 				(font
@@ -10015,6 +10483,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 63.5 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 63.5 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "23f6ff17-d3da-4b0a-b914-391709bc6a99")
 		)
@@ -10137,6 +10623,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 109.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c3eed848-1614-4cc4-961e-c5ce412eb0a1")
 		)
@@ -10251,6 +10755,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 132.08 20.32 0)
 			(effects
 				(font
@@ -10447,6 +10969,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 132.08 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 132.08 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a0cf4bae-2333-460b-b500-47f947fee185")
 		)
@@ -10635,6 +11175,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 40.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 40.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e2a8a7a8-11b2-4128-8b7b-a011aaf4e610")
 		)
@@ -10757,6 +11315,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 86.36 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 86.36 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7848dfad-c7ac-41ea-b3c5-6ea937679c65")
 		)
@@ -10871,6 +11447,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 223.52 114.3 0)
 			(effects
 				(font
@@ -11133,6 +11727,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8ca98be6-62cf-4977-b1db-eff1c68b5744")
 		)
@@ -11247,6 +11859,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 200.66 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 200.66 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 200.66 147.32 0)
 			(effects
 				(font
@@ -11435,6 +12065,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 63.5 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 63.5 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 63.5 20.32 0)
 			(effects
 				(font
@@ -12201,6 +12849,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 177.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 177.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "292a2434-8e7f-4108-b6c3-c1f7cb1a4643")
 		)
@@ -12315,6 +12981,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 40.64 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 40.64 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 40.64 180.34 0)
 			(effects
 				(font
@@ -12709,6 +13393,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 86.36 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 86.36 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8382590e-1d07-480e-afb9-ecd6a382fd88")
 		)
@@ -12831,6 +13533,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 17.78 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
+			(at 17.78 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1a8ffbae-aed5-4589-9764-1fe61a2a0123")
 		)
@@ -12945,6 +13665,24 @@
 			)
 		)
 		(property "Impedance @ Frequency" ""
+			(at 86.36 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XINGLIGHT"
+			(at 86.36 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "XL-1615RGBC-WS2812B-S"
 			(at 86.36 180.34 0)
 			(effects
 				(font

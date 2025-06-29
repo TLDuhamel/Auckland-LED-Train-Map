@@ -13,7 +13,8 @@
 // Array of server URLs for failover
 String serverURLs[] = {
 	String("http://keastudios.co.nz/akl-ltm/") + BACKEND_VERSION + ".json",
-	String("http://192.168.86.31:3000/akl-ltm/") + BACKEND_VERSION + ".json",
+	String("http://dirksonline.net/akl-ltm/") + BACKEND_VERSION + ".json",
+	// String("http://192.168.86.31:3000/akl-ltm/") + BACKEND_VERSION + ".json",
 };
 const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
 int currentServerIndex = 0;
@@ -293,9 +294,9 @@ void setBlockColor(uint16_t block, int colorId) {
 	blockColorIds[block] = colorId;	 // Update the color ID for the block if it's higher
 
 	// Set the color on the appropriate strand based on the block number
-	if (block >= 100 && block <= 207) {
+	if (block >= 100 && block < 100 + NAL_NIMT_PIXELS) {
 		nalNIMT.SetPixelColor(block - 100, colorTable[blockColorIds[block]]);
-	} else if (block >= 300 && block <= 343) {
+	} else if (block >= 300 && block < 300 + STRAND_MNK_PIXELS) {
 		strandMNK.SetPixelColor(block - 300, colorTable[blockColorIds[block]]);
 	} else {
 		Serial.printf("Block %d is out of range for both strands.\n", block);
@@ -313,7 +314,7 @@ void drawMap(time_t epoch) {
 
 	// Draw the map based on the current LED update schedule
 	for (const auto& update : ledUpdateSchedule) {
-		if (epoch > update.timestamp) {
+		if (epoch >= update.timestamp) {
 			setBlockColor(update.postBlock, update.colorId);
 		} else {
 			setBlockColor(update.preBlock, update.colorId);
@@ -376,7 +377,11 @@ void parseLEDMap(const String& downloadedJson) {
 		LedUpdate ledUpdate;
 		ledUpdate.preBlock = blocks[0];
 		ledUpdate.postBlock = blocks[1];
-		ledUpdate.timestamp = baseTimestamp + offset;
+		if (offset > 0) {
+			ledUpdate.timestamp = baseTimestamp + offset;
+		} else {
+			ledUpdate.timestamp = 0;
+		}
 		ledUpdate.colorId = colorId;
 		ledUpdateSchedule.push_back(ledUpdate);
 	}
