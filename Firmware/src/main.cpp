@@ -3,6 +3,7 @@
 #include <HTTPClient.h>
 #include <NeoPixelBus.h>
 #include <NeoPixelBusLg.h>
+#include <Preferences.h>
 #include <WiFi.h>
 #include <esp_sntp.h>
 #include <time.h>
@@ -26,10 +27,12 @@ const char* time_zone = "NZST-12NZDT,M9.5.0,M4.1.0/3";
 time_t lastMapDrawTime = 0;	 // Tracks the last time the map was drawn
 time_t nextFetchTime = 0;	 // Tracks when the next update should occur
 
-// Pins and pixel counts defined in the board file (./boards/Auckland_Rail_Network_V1_0_0.json)
+// Pins and pixel counts defined in the board file (./boards/)
 
-NeoPixelBusLg<NeoGrbFeature, NeoEsp32Rmt0800KbpsMethod> strandMNK(STRAND_MNK_PIXELS, STRAND_MNK);
-NeoPixelBusLg<NeoGrbFeature, NeoEsp32Rmt1800KbpsMethod> nalNIMT(NAL_NIMT_PIXELS, NAL_NIMT);
+// I am useing WS2811 timing =>   0:{0.3, 0.95} 1:{0.9, 0.35} Reset:300us
+// XL-1615RGBC-WS2812B-S requires 0:{>0.3, >0.9} 1:{>0.9, >0.3} Reset:>200us
+NeoPixelBusLg<NeoGrbFeature, NeoEsp32Rmt0Ws2811Method> strandMNK(STRAND_MNK_PIXELS, STRAND_MNK);
+NeoPixelBusLg<NeoGrbFeature, NeoEsp32Rmt1Ws2811Method> nalNIMT(NAL_NIMT_PIXELS, NAL_NIMT);
 
 RgbColor black(0, 0, 0);
 std::vector<RgbColor> colorTable;
@@ -67,7 +70,7 @@ typedef struct {
 TaskHandle_t statusLedTaskHandle;
 
 static unsigned long lastUpdate = 0;
-int16_t brightness = 40;
+int16_t brightness = 60;
 bool ledUpdatePending = false;
 
 struct Button {
@@ -114,10 +117,21 @@ void checkButton(Button* button) {
 						Serial.printf("Unknown button pressed on pin %d\n", button->pin);
 						return;	 // Exit if an unknown button is pressed
 				}
+
 				// Ensure brightness stays within bounds
 				brightness = (brightness > 0) ? constrain(brightness, 20, 250) : 0;
+
+				// Save brightness to preferences
+				preferences.begin("brightness");
+				if (preferences.getInt("brightness") != brightness) {
+					preferences.putInt("brightness", brightness);
+				}
+				preferences.end();
+
+				// Update the LEDs
 				strandMNK.SetLuminance(brightness);
 				nalNIMT.SetLuminance(brightness);
+
 				Serial.printf("brightness now at: %i/255\n", brightness);
 				ledUpdatePending = true;
 			}
@@ -322,8 +336,12 @@ void drawMap(time_t epoch) {
 	}
 
 	// Show the updates on both strands
-	nalNIMT.Show();
 	strandMNK.Show();
+
+	// Allow time for the strand to be sent out (Not needed but might reduce interference)
+	vTaskDelay(pdMS_TO_TICKS(int(0.03 * STRAND_MNK_PIXELS) + 1));
+
+	nalNIMT.Show();
 
 	lastMapDrawTime = epoch;  // Update the last draw time
 }
@@ -421,8 +439,43 @@ void setup() {
 	strandMNK.Show();
 
 	// Set initial brightness
+	preferences.begin("brightness");
+	brightness = preferences.getInt("brightness", brightness);
+	preferences.end();
 	strandMNK.SetLuminance(brightness);
 	nalNIMT.SetLuminance(brightness);
+
+// Factory test mode
+#if defined(FACTORY_TEST)
+	preferences.begin("factory_test");
+	if (preferences.getBool("passed", false) == false) {  // Check if factory test mode has been passed
+		preferences.putBool("passed", true);			  // Set factory test mode as passed
+		preferences.end();
+
+		while (true) {
+			Serial.println("Factory test mode enabled");
+
+			strandMNK.ClearTo(RgbColor(255, 0, 0));
+			nalNIMT.ClearTo(RgbColor(255, 0, 0));
+			strandMNK.Show();
+			nalNIMT.Show();
+			vTaskDelay(pdMS_TO_TICKS(1000));
+
+			strandMNK.ClearTo(RgbColor(0, 255, 0));
+			nalNIMT.ClearTo(RgbColor(0, 255, 0));
+			strandMNK.Show();
+			nalNIMT.Show();
+			vTaskDelay(pdMS_TO_TICKS(1000));
+
+			strandMNK.ClearTo(RgbColor(0, 0, 255));
+			nalNIMT.ClearTo(RgbColor(0, 0, 255));
+			strandMNK.Show();
+			nalNIMT.Show();
+			vTaskDelay(pdMS_TO_TICKS(1000));
+		}
+	}
+	preferences.end();
+#endif
 
 	// Button initialization
 	pinMode(brightnessDownButton.pin, INPUT_PULLUP);
@@ -454,7 +507,6 @@ void setup() {
 }
 
 void loop() {
-
 	handleWiFiImprov();			   // Handle WiFi credentials setup via WebSerial
 	time_t epoch = time(nullptr);  // Get current time
 
