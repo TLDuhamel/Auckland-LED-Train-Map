@@ -1,0 +1,45 @@
+{
+    "layout": {
+        "hspace": "1.6mm",
+        "vspace": "1.6mm",
+        "rows": "3",
+        "hbonecut": "False"
+    },
+    "tabs": {
+        "type": "fixed",
+        "vwidth": "5mm",
+        "hwidth": "5mm",
+        "vcount": "0",
+        "hcount": "2",
+        "fillet": "0.8mm"
+    },
+    "cuts": {
+        "type": "vcuts"
+    },
+    "framing": {
+        "type": "railslr",
+        "fillet": "5mm"
+    },
+    "fiducials": {
+        "type": "4fid",
+        "hoffset": "3.85mm",
+        "voffset": "3.85mm",
+        "opening": "2mm"
+    },
+    "text": {
+        "type": "simple",
+        "hoffset": "1mm",
+        "vjustify": "top",
+        "orientation": "90deg",
+        "text": "JLCJLCJLCJLC",
+        "anchor": "ml"
+    },
+    "page": {
+        "anchor": "tl",
+        "posx": "0mm",
+        "posy": "0mm"
+    },
+    "post": {
+        "millradius": "0.8mm"
+    }
+}

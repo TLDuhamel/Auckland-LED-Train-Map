@@ -5,12 +5,12 @@
 	(uuid "b2eb742e-91e4-4c99-b268-08464fb7f5fc")
 	(paper "A4")
 	(title_block
-		(title "Auckland Train Network Live Map")
-		(date "2025-06-23")
-		(rev "1.1.0")
+		(title "Auckland Live Train Map")
+		(date "2025-07-03")
+		(rev "1.1.1")
 		(company "Kea Studios")
 		(comment 1 "©Chris Dirks")
-		(comment 2 "MIT License")
+		(comment 2 "GPL-3.0-or-later License")
 	)
 	(lib_symbols
 		(symbol "PCM_JLCPCB-Extended:LED, WS2812B, 1615"
