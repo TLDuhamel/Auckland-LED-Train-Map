@@ -72,6 +72,7 @@ TaskHandle_t statusLedTaskHandle;
 static unsigned long lastUpdate = 0;
 int16_t brightness = 60;
 bool ledUpdatePending = false;
+bool showNotInServiceTrains = true;
 
 struct Button {
 	uint8_t pin;
@@ -94,29 +95,43 @@ void IRAM_ATTR buttonISR(void* arg) {
 }
 
 void checkButton(Button* button) {
-	if (button->pendingCheck && (millis() - button->lastChangeTime) >= DEBOUNCE_DELAY) {
-		bool currentState = digitalRead(button->pin);
-		if (currentState != button->lastState) {
-			button->lastState = currentState;
-			if (currentState == LOW) {	// Assuming active-low configuration
-				// Handle button press
-				switch (button->pin) {
-					case BRIGHTNESS_DOWN_BUTTON:
-						Serial.print("Brightness Down pressed ");
-						brightness -= 20;
-						break;
-					case BRIGHTNESS_UP_BUTTON:
-						Serial.print("Brightness Up pressed ");
-						brightness += 20;
-						break;
-					case POWER_BUTTON:
-						Serial.print("Power button pressed ");
-						brightness = (brightness == 0) ? 250 : 0;  // Toggle brightness
-						break;
-					default:
-						Serial.printf("Unknown button pressed on pin %d\n", button->pin);
-						return;	 // Exit if an unknown button is pressed
-				}
+    if (button->pendingCheck && (millis() - button->lastChangeTime) >= DEBOUNCE_DELAY) {
+        bool currentState = digitalRead(button->pin);
+        if (currentState != button->lastState) {
+            button->lastState = currentState;
+            if (currentState == LOW) {	// Assuming active-low configuration
+                // Handle button press
+                if (button->pin == BRIGHTNESS_DOWN_BUTTON && digitalRead(BRIGHTNESS_UP_BUTTON) == LOW) {
+                    // Handle both brightness buttons being held down
+                    showNotInServiceTrains = !showNotInServiceTrains;
+                    Serial.printf("Not-in-service train visibility toggled: %s\n", showNotInServiceTrains ? "ON" : "OFF");
+                    ledUpdatePending = true;
+                    // Consume the check for the other button to prevent double execution
+                    brightnessUpButton.pendingCheck = false;
+                    return;
+                } else if (button->pin == BRIGHTNESS_UP_BUTTON && digitalRead(BRIGHTNESS_DOWN_BUTTON) == LOW) {
+                    // This case is handled by the one above to avoid running twice.
+                    // We just need to consume the check.
+                    brightnessDownButton.pendingCheck = false;
+                    return;
+                }
+                switch (button->pin) {
+                    case BRIGHTNESS_DOWN_BUTTON:
+                        Serial.print("Brightness Down pressed ");
+                        brightness -= 20;
+                        break;
+                    case BRIGHTNESS_UP_BUTTON:
+                        Serial.print("Brightness Up pressed ");
+                        brightness += 20;
+                        break;
+                    case POWER_BUTTON:
+                        Serial.print("Power button pressed ");
+                        brightness = (brightness == 0) ? 250 : 0;  // Toggle brightness
+                        break;
+                    default:
+                        Serial.printf("Unknown button pressed on pin %d\n", button->pin);
+                        return;	 // Exit if an unknown button is pressed
+                }
 
 				// Ensure brightness stays within bounds
 				brightness = (brightness > 0) ? constrain(brightness, 20, 250) : 0;
@@ -326,14 +341,18 @@ void drawMap(time_t epoch) {
 		blockColorIds[i] = 0;  // Reset all blocks to black
 	}
 
-	// Draw the map based on the current LED update schedule
-	for (const auto& update : ledUpdateSchedule) {
-		if (epoch >= update.timestamp) {
-			setBlockColor(update.postBlock, update.colorId);
-		} else {
-			setBlockColor(update.preBlock, update.colorId);
-		}
-	}
+    // Draw the map based on the current LED update schedule
+    for (const auto& update : ledUpdateSchedule) {
+        // Skip "not in service" trains (colorId is 0) if they are toggled off
+        if (!showNotInServiceTrains && update.colorId == 0) {
+            continue;
+        }
+        if (epoch >= update.timestamp) {
+            setBlockColor(update.postBlock, update.colorId);
+        } else {
+            setBlockColor(update.preBlock, update.colorId);
+        }
+    }
 
 	// Show the updates on both strands
 	strandMNK.Show();
