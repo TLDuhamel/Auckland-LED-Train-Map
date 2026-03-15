@@ -13,9 +13,9 @@
 
 // Array of server URLs for failover
 String serverURLs[] = {
+	String("http://192.168.20.2:3000/akl-ltm/") + BACKEND_VERSION + ".json", // Local server
 	String("http://keastudios.co.nz/akl-ltm/") + BACKEND_VERSION + ".json",
-	String("http://dirksonline.net/akl-ltm/") + BACKEND_VERSION + ".json",
-	// String("http://192.168.86.31:3000/akl-ltm/") + BACKEND_VERSION + ".json",
+	String("http://dirksonline.net/akl-ltm/") + BACKEND_VERSION + ".json"
 };
 const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
 int currentServerIndex = 0;
@@ -305,7 +305,8 @@ String downloadJSON() {
 		if (httpCode == HTTP_CODE_OK) {
 			payload = http.getString();
 			http.end();
-			currentServerIndex = serverIndex;  // Update to the successful server
+			//currentServerIndex = serverIndex;  // Update to the successful server
+			currentServerIndex = 0;  // Always try from the first server (development mode - useful for local server testing)
 			return payload;
 		} else {
 			Serial.printf("Fetch from %s returned: %i (%s)\n", url.c_str(), httpCode, http.errorToString(httpCode).c_str());
