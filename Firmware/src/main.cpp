@@ -13,7 +13,7 @@
 
 // Array of server URLs for failover
 String serverURLs[] = {
-	String("http://led-rails-backend-akldelay.onrender.com/akl-ltm/") + BACKEND_VERSION + ".json", // Render.com server
+	String("https://led-rails-backend-akldelay.onrender.com/akl-ltm/") + BACKEND_VERSION + ".json", // Render.com server
 	String("http://192.168.20.9:3000/akl-ltm/") + BACKEND_VERSION + ".json", // Local server
 	String("http://keastudios.co.nz/akl-ltm/") + BACKEND_VERSION + ".json", // OG Server
 	String("http://dirksonline.net/akl-ltm/") + BACKEND_VERSION + ".json" // Backup OP Server
@@ -298,6 +298,7 @@ String downloadJSON() {
 	for (int i = 0; i < numServers; i++) {
 		int serverIndex = (currentServerIndex + i) % numServers;
 		String url = serverURLs[serverIndex];
+		Serial.printf("Fetching from %s\n", url.c_str());
 		http.setTimeout(10000);	 // Set timeout to 10 seconds per server
 		http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
 		http.begin(url);
