@@ -13,9 +13,10 @@
 
 // Array of server URLs for failover
 String serverURLs[] = {
-	String("http://192.168.20.2:3000/akl-ltm/") + BACKEND_VERSION + ".json", // Local server
-	String("http://keastudios.co.nz/akl-ltm/") + BACKEND_VERSION + ".json",
-	String("http://dirksonline.net/akl-ltm/") + BACKEND_VERSION + ".json"
+	String("http://led-rails-backend-akldelay.onrender.com/akl-ltm/") + BACKEND_VERSION + ".json", // Render.com server
+	String("http://192.168.20.9:3000/akl-ltm/") + BACKEND_VERSION + ".json", // Local server
+	String("http://keastudios.co.nz/akl-ltm/") + BACKEND_VERSION + ".json", // OG Server
+	String("http://dirksonline.net/akl-ltm/") + BACKEND_VERSION + ".json" // Backup OP Server
 };
 const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
 int currentServerIndex = 0;
